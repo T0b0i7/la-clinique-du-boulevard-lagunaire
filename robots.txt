@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://t0b0i7.github.io/la-clinique-du-boulevard-lagunaire/sitemap.xml
