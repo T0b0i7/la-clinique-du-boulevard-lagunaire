@@ -42,7 +42,7 @@
 .section-mod.foncee { background-color: var(--alice-blue); }
 
 .mod-kicker {
-  color: var(--verdigris);
+  color: var(--ming);
   font-family: var(--ff-oswald);
   font-weight: var(--fw-700);
   text-transform: uppercase;
@@ -172,7 +172,7 @@
   align-items: center;
   gap: 10px;
   font-weight: var(--fw-700);
-  color: var(--verdigris);
+  color: var(--ming);
   font-size: 1.5rem;
 }
 
@@ -615,8 +615,8 @@ table.tarifs th:last-child {
 }
 
 .genotype.actif {
-  background-color: var(--verdigris);
-  border-color: var(--verdigris);
+  background-color: var(--ming);
+  border-color: var(--ming);
   color: var(--white);
   box-shadow: 0 8px 20px hsla(182, 100%, 35%, 0.4);
 }
@@ -819,7 +819,7 @@ table.tarifs th:last-child {
 }
 
 .explication .resume-couple {
-  color: var(--verdigris);
+  color: var(--ming);
   font-weight: var(--fw-700);
   font-size: 1.5rem;
   margin-bottom: 12px;
@@ -851,7 +851,7 @@ table.tarifs th:last-child {
 .encart-cta {
   padding: 32px;
   border-radius: var(--radius-6);
-  background-color: var(--verdigris);
+  background-color: var(--ming);
   display: flex;
   flex-wrap: wrap;
   align-items: center;

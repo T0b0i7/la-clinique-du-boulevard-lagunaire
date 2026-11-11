@@ -1215,6 +1215,13 @@ body.nav-active { overflow: hidden; }
   color: var(--independece);
 }
 
+/* navigation au clavier visible sur tous les elements interactifs */
+
+:focus-visible {
+  outline: 3px solid var(--verdigris);
+  outline-offset: 2px;
+}
+
 /* ecart horizontal impossible : certains elements animes sont
    decales en dehors de l'ecran avant leur apparition */
 
