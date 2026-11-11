@@ -1227,6 +1227,29 @@ html { overflow-x: hidden; }
   .navbar-item.rdv-mobile { display: none; }
 }
 
+/* bandeau discret de demonstration, fixe en bas de page
+   pour ne pas masquer le logo ni le menu */
+
+.bandeau-proto {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  padding: 7px 16px;
+  background-color: var(--midnight-green);
+  color: var(--alice-blue);
+  font-size: 1.25rem;
+  text-align: center;
+  border-top: 1px solid var(--white_a10);
+}
+
+/* le bandeau fixe ne doit rien masquer */
+
+.footer-bottom { padding-block-end: 64px; }
+
+.back-top-btn { bottom: 48px; }
+
 /* navigation desktop compacte : le header accueille maintenant
    le bouton de rendez-vous et le bouton d'appel */
 
