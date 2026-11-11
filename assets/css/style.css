@@ -1144,3 +1144,27 @@ body.nav-active { overflow: hidden; }
   .contact-item { margin-block-start: 0; }
 
 }
+
+
+
+
+/*-----------------------------------*\
+  #CARTE D'ACCES (plan de localisation)
+\*-----------------------------------*/
+
+.map-frame {
+  margin-top: 44px;
+  height: 440px;
+  border-radius: var(--radius-12);
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.navbar-link { white-space: nowrap; }

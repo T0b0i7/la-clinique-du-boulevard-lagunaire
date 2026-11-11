@@ -110,7 +110,7 @@ function majAleles(parent) {
   spans.forEach((span, i) => {
     if (al[i]) {
       span.textContent = al[i];
-      span.style.color = al[i] === 'S' ? '#fff' : '#0b2447';
+      span.style.color = al[i] === 'S' ? '#fff' : '#005254';
       span.style.borderColor = COULEURS[al[i]];
       span.style.background = COULEURS[al[i]];
       span.classList.add('present');
@@ -299,21 +299,3 @@ if (cibles.length && 'IntersectionObserver' in window) {
   cibles.forEach((cible) => cible.classList.add('visible'));
 }
 
-/**
- * menu mobile
- */
-
-const burger = document.getElementById('burger');
-const navMobile = document.getElementById('nav-mobile');
-
-burger?.addEventListener('click', () => {
-  const ouvert = navMobile.classList.toggle('ouvert');
-  burger.setAttribute('aria-expanded', String(ouvert));
-});
-
-navMobile?.querySelectorAll('a').forEach((lien) => {
-  lien.addEventListener('click', () => {
-    navMobile.classList.remove('ouvert');
-    burger.setAttribute('aria-expanded', 'false');
-  });
-});

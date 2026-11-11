@@ -3,242 +3,627 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- 
+    - primary meta tags
+  -->
   <title>Simulateur de compatibilité génétique de l'hémoglobine. Clinique du Boulevard Lagunaire, Porto-Novo</title>
+  <meta name="title" content="Simulateur de compatibilité de l'hémoglobine. Clinique du Boulevard Lagunaire">
   <meta name="description" content="Simulateur éducatif de compatibilité de l'hémoglobine pour les couples. Estimez les probabilités de transmission des génotypes AA, AS, AC, SS, SC et CC, puis confirmez par une électrophorèse au laboratoire de la Clinique du Boulevard Lagunaire.">
 
+  <!-- 
+    - favicon
+  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
+  <!-- 
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/clinique.css">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/modules.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+  <link rel="preload" as="image" href="./assets/images/footer-bg.png">
+
 </head>
 
-<body>
+<body id="top">
 
-  <!-- #HEADER -->
+  <!-- 
+    - #PRELOADER
+  -->
 
-  <header class="site-header">
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
     <div class="container">
 
-      <a href="./index.html" class="marque">
-        <span class="marque-badge" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M10 2h4v6h6v4h-6v6h-4v-6H4v-4h6z" fill="#fff"/>
-          </svg>
-        </span>
-        <span>
-          Clinique du Boulevard Lagunaire
-          <small>Porto-Novo, Bénin</small>
-        </span>
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire, Porto-Novo">
       </a>
 
-      <nav class="nav-desktop" aria-label="Navigation principale">
-        <a href="./index.html">Accueil</a>
-        <a href="./index.html#services">Services</a>
-        <a href="./equipe.html">Équipe et tarifs</a>
-        <a href="./electrophorese.html" class="actif">Électrophorèse</a>
-        <a href="./index.html#contact">Contact</a>
-        <a href="tel:+2290194465252" class="nav-cta">Prendre rendez-vous</a>
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire, Porto-Novo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="Fermer le menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link title-md">Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#services" class="navbar-link title-md">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./equipe.html" class="navbar-link title-md">Équipe et tarifs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./electrophorese.html" class="navbar-link title-md">Électrophorèse</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#acces" class="navbar-link title-md">Accès</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#contact" class="navbar-link title-md">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Page Facebook de la clinique">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram de la clinique">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
       </nav>
 
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
-          <path d="M4 7h16M4 12h16M4 17h16"/>
-        </svg>
+      <button class="nav-open-btn" aria-label="Ouvrir le menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-    </div>
+      <a href="tel:+2290194465252" class="btn has-before title-md">Prendre rendez-vous</a>
 
-    <nav class="nav-mobile" id="nav-mobile" aria-label="Navigation mobile">
-      <a href="./index.html">Accueil</a>
-      <a href="./index.html#services">Services</a>
-      <a href="./equipe.html">Équipe et tarifs</a>
-      <a href="./electrophorese.html" class="actif">Électrophorèse</a>
-      <a href="./index.html#contact">Contact</a>
-      <a href="tel:+2290194465252">Prendre rendez-vous. 01 94 46 52 52</a>
-    </nav>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
   </header>
 
+
+
+
+
   <main>
+    <article>
 
-    <!-- #HERO -->
+      <!-- 
+        - #HERO
+      -->
 
-    <section class="page-hero">
-      <div class="container">
+      <section class="section hero hero-page" style="background-image: url('./assets/images/hero-bg.png')"
+        aria-label="Simulateur d'électrophorèse">
+        <div class="container">
 
-        <p class="texte-sage kicker reveal d1">Simulateur interactif du laboratoire</p>
+          <div class="hero-content">
 
-        <h1 class="reveal d2">Compatibilité génétique de l'hémoglobine.</h1>
+            <p class="hero-subtitle has-before" data-reveal="left">Simulateur interactif du laboratoire</p>
 
-        <p class="reveal d3">
-          Vous préparez un mariage ou une grossesse ? Sélectionnez le génotype de chaque parent
-          pour visualiser les probabilités de transmission à chaque grossesse. Cet outil éducatif
-          est proposé par le laboratoire d'analyses biomédicales de la clinique.
-        </p>
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              Compatibilité <br>
+              génétique de <br>
+              l'hémoglobine.
+            </h1>
 
-      </div>
+            <p class="hero-texte" data-reveal="left">
+              Vous préparez un mariage ou une grossesse ? Sélectionnez le génotype de chaque parent
+              pour visualiser les probabilités de transmission à chaque grossesse. Cet outil éducatif
+              est proposé par le laboratoire d'analyses biomédicales de la clinique.
+            </p>
 
-      <svg class="vagues" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0 40 C 240 80 480 0 720 30 C 960 60 1200 10 1440 40 L 1440 70 L 0 70 Z" fill="currentColor" opacity="0.15"/>
-        <path d="M0 50 C 260 15 520 70 780 40 C 1040 10 1240 60 1440 45 L 1440 70 L 0 70 Z" fill="currentColor"/>
-      </svg>
-    </section>
+          </div>
 
-    <!-- #SIMULATEUR -->
+        </div>
+      </section>
 
-    <section class="section" aria-labelledby="titre-simulateur">
-      <div class="container">
 
-        <div class="entete-section aux-scroll" id="titre-simulateur">
-          <p class="texte-sage souligne">Croisement génétique</p>
-          <h2>Choisissez le profil de chaque parent.</h2>
-          <p>
+
+
+
+      <!-- 
+        - #SIMULATEUR
+      -->
+
+      <section class="section-mod" aria-labelledby="titre-simulateur">
+        <div class="container">
+
+          <p class="mod-kicker aux-scroll" id="titre-simulateur">Croisement génétique</p>
+
+          <h2 class="mod-h2 aux-scroll">Choisissez le profil de chaque parent.</h2>
+
+          <p class="mod-texte aux-scroll">
             Chaque personne possède deux allèles de l'hémoglobine : A (normale), S (drépanocytaire)
             ou C (hémoglobine C). L'enfant reçoit un allèle de chaque parent, à chaque grossesse.
           </p>
-        </div>
 
-        <div class="simulateur aux-scroll">
+          <div class="simulateur aux-scroll">
 
-          <p class="pas">Étape 1. Sélectionner les génotypes</p>
+            <p class="mod-pas">Étape 1. Sélectionner les génotypes</p>
 
-          <div class="parents">
+            <div class="parents">
 
-            <div class="parent-bloc">
-              <h3>Parent 1</h3>
-              <p class="indice">Sélectionnez son profil génétique</p>
+              <div class="parent-bloc">
+                <h3>Parent 1</h3>
+                <p class="indice">Sélectionnez son profil génétique</p>
 
-              <div class="genotypes" data-parent="1" role="group" aria-label="Génotype du parent 1">
-                <button class="genotype" data-geno="AA">AA</button>
-                <button class="genotype" data-geno="AS">AS</button>
-                <button class="genotype" data-geno="AC">AC</button>
-                <button class="genotype" data-geno="SS">SS</button>
-                <button class="genotype" data-geno="SC">SC</button>
-                <button class="genotype" data-geno="CC">CC</button>
-              </div>
-
-              <div class="parent-aleles" id="aleles-p1" aria-live="polite">
-                <span class="alele"></span>
-                <span class="alele"></span>
-              </div>
-            </div>
-
-            <div class="croisement-scene" aria-hidden="true">
-              <svg class="croisement-svg" viewBox="0 0 120 190" fill="none">
-                <path class="ligne-alele" d="M8 40 C 40 40 50 80 60 95"/>
-                <path class="ligne-alele" d="M112 40 C 80 40 70 80 60 95"/>
-                <circle class="noeud" cx="60" cy="108" r="14"/>
-                <path d="M60 130 v14 M53 137 h14" stroke="hsl(140,30%,75%)" stroke-width="3" stroke-linecap="round"/>
-              </svg>
-            </div>
-
-            <div class="parent-bloc">
-              <h3>Parent 2</h3>
-              <p class="indice">Sélectionnez son profil génétique</p>
-
-              <div class="genotypes" data-parent="2" role="group" aria-label="Génotype du parent 2">
-                <button class="genotype" data-geno="AA">AA</button>
-                <button class="genotype" data-geno="AS">AS</button>
-                <button class="genotype" data-geno="AC">AC</button>
-                <button class="genotype" data-geno="SS">SS</button>
-                <button class="genotype" data-geno="SC">SC</button>
-                <button class="genotype" data-geno="CC">CC</button>
-              </div>
-
-              <div class="parent-aleles" id="aleles-p2" aria-live="polite">
-                <span class="alele"></span>
-                <span class="alele"></span>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="resultats" id="resultats">
-
-            <div class="resultats-titre">
-              <h3 id="resultats-titre-texte">Probabilités à chaque grossesse</h3>
-              <button class="btn btn-contour-blanc" id="reinit" type="button">Recommencer</button>
-            </div>
-
-            <div class="jauges" id="jauges"></div>
-
-            <div class="explication" id="explication"></div>
-
-            <div class="encart-labo">
-
-              <div class="encart-cta">
-                <div>
-                  <h3>Confirmez votre génotype au laboratoire.</h3>
-                  <p>
-                    Une simple prise de sang suffit. L'électrophorèse de l'hémoglobine est réalisée
-                    directement au laboratoire d'analyses biomédicales de la Clinique du Boulevard
-                    Lagunaire, quartier Avakpa, à Porto-Novo. Le laboratoire reçoit 24h/24 et 7j/7.
-                  </p>
+                <div class="genotypes" data-parent="1" role="group" aria-label="Génotype du parent 1">
+                  <button class="genotype" data-geno="AA">AA</button>
+                  <button class="genotype" data-geno="AS">AS</button>
+                  <button class="genotype" data-geno="AC">AC</button>
+                  <button class="genotype" data-geno="SS">SS</button>
+                  <button class="genotype" data-geno="SC">SC</button>
+                  <button class="genotype" data-geno="CC">CC</button>
                 </div>
-                <a href="tel:+2290194465252" class="btn btn-blanc">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c1 .3 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg>
-                  Appeler le 01 94 46 52 52
-                </a>
+
+                <div class="parent-aleles" id="aleles-p1" aria-live="polite">
+                  <span class="alele"></span>
+                  <span class="alele"></span>
+                </div>
               </div>
 
-              <p class="avertissement">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
-                Avertissement médical. Ce simulateur est un outil pédagogique basé sur les lois de
-                Mendel. Il ne remplace en aucun cas un diagnostic biologique. Seule l'électrophorèse
-                de l'hémoglobine réalisée en laboratoire permet de déterminer avec certitude votre
-                génotype et celui de votre partenaire. Discutez toujours des résultats avec un
-                professionnel de santé avant toute décision.
-              </p>
+              <div class="croisement-scene" aria-hidden="true">
+                <svg class="croisement-svg" viewBox="0 0 120 190" fill="none">
+                  <path class="ligne-alele" d="M8 40 C 40 40 50 80 60 95"/>
+                  <path class="ligne-alele" d="M112 40 C 80 40 70 80 60 95"/>
+                  <circle class="noeud" cx="60" cy="108" r="14"/>
+                  <path d="M60 130 v14 M53 137 h14" stroke="hsl(174,60%,70%)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <div class="parent-bloc">
+                <h3>Parent 2</h3>
+                <p class="indice">Sélectionnez son profil génétique</p>
+
+                <div class="genotypes" data-parent="2" role="group" aria-label="Génotype du parent 2">
+                  <button class="genotype" data-geno="AA">AA</button>
+                  <button class="genotype" data-geno="AS">AS</button>
+                  <button class="genotype" data-geno="AC">AC</button>
+                  <button class="genotype" data-geno="SS">SS</button>
+                  <button class="genotype" data-geno="SC">SC</button>
+                  <button class="genotype" data-geno="CC">CC</button>
+                </div>
+
+                <div class="parent-aleles" id="aleles-p2" aria-live="polite">
+                  <span class="alele"></span>
+                  <span class="alele"></span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="resultats" id="resultats">
+
+              <div class="resultats-titre">
+                <h3 id="resultats-titre-texte">Probabilités à chaque grossesse</h3>
+                <button class="btn-contour" id="reinit" type="button">Recommencer</button>
+              </div>
+
+              <div class="jauges" id="jauges"></div>
+
+              <div class="explication" id="explication"></div>
+
+              <div class="encart-labo">
+
+                <div class="encart-cta">
+                  <div>
+                    <h3>Confirmez votre génotype au laboratoire.</h3>
+                    <p>
+                      Une simple prise de sang suffit. L'électrophorèse de l'hémoglobine est réalisée
+                      directement au laboratoire d'analyses biomédicales de la Clinique du Boulevard
+                      Lagunaire, quartier Avakpa, à Porto-Novo. Le laboratoire reçoit 24h/24 et 7j/7.
+                    </p>
+                  </div>
+                  <a href="tel:+2290194465252" class="btn has-before title-md">
+                    <ion-icon name="call" aria-hidden="true"></ion-icon>
+                    Appeler le +229 01 94 46 52 52
+                  </a>
+                </div>
+
+                <p class="avertissement">
+                  <ion-icon name="warning-outline" aria-hidden="true"></ion-icon>
+                  Avertissement médical. Ce simulateur est un outil pédagogique basé sur les lois de
+                  Mendel. Il ne remplace en aucun cas un diagnostic biologique. Seule l'électrophorèse
+                  de l'hémoglobine réalisée en laboratoire permet de déterminer avec certitude votre
+                  génotype et celui de votre partenaire. Discutez toujours des résultats avec un
+                  professionnel de santé avant toute décision.
+                </p>
+
+              </div>
 
             </div>
 
           </div>
 
         </div>
+      </section>
 
-      </div>
-    </section>
 
-    <!-- #ENCART -->
 
-    <section class="encart-global">
-      <div class="container aux-scroll">
-        <h2>Une question sur votre profil génétique ?</h2>
-        <p>
-          Nos biologistes et nos médecins vous reçoivent à la clinique, au quartier Avakpa,
-          en face du restaurant Art Résidence, à Porto-Novo.
-        </p>
-        <div class="actions">
-          <a href="tel:+2290194465252" class="btn btn-blanc">Appeler la clinique</a>
-          <a href="./equipe.html" class="btn btn-contour-blanc">Voir l'équipe et les tarifs</a>
+
+
+      <!-- 
+        - #ACCES ET PLAN
+      -->
+
+      <section class="section-mod foncee" aria-labelledby="titre-acces-sim">
+        <div class="container">
+
+          <p class="mod-kicker aux-scroll" id="titre-acces-sim">Nous trouver</p>
+
+          <h2 class="mod-h2 aux-scroll">Venez réaliser votre électrophorèse.</h2>
+
+          <p class="mod-texte aux-scroll">
+            Le laboratoire de la clinique est situé au quartier Avakpa, en face du restaurant
+            Art Résidence, à Porto-Novo. Prise de sang sans rendez-vous, résultats remis rapidement.
+          </p>
+
+          <div class="carte-acces aux-scroll">
+
+            <div class="plan">
+              <iframe
+                src="https://www.google.com/maps?q=Clinique+du+Boulevard+Lagunaire,+Avakpa,+Porto-Novo,+B%C3%A9nin&z=15&output=embed"
+                loading="lazy" title="Plan d'accès à la Clinique du Boulevard Lagunaire, Porto-Novo"
+                referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+
+            <div class="infos">
+              <h3>Informations d'accès</h3>
+              <div class="acces-item">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Adresse</strong>
+                  <span>Avakpa, en face du restaurant Art Résidence, Porto-Novo, Bénin</span>
+                </div>
+              </div>
+              <div class="acces-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Horaires</strong>
+                  <span>Laboratoire ouvert 24h/24 et 7j/7</span>
+                </div>
+              </div>
+              <div class="acces-item">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Téléphone</strong>
+                  <span>+229 01 94 46 52 52</span>
+                </div>
+              </div>
+              <div class="acces-item">
+                <ion-icon name="water-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Électrophorèse</strong>
+                  <span>Tarif indicatif de 8 500 FCFA, sans préparation particulière</span>
+                </div>
+              </div>
+              <a href="tel:+2290194465252" class="btn has-before title-md">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+                Appeler la clinique
+              </a>
+            </div>
+
+          </div>
+
         </div>
-      </div>
-    </section>
+      </section>
 
+
+
+
+
+      <!-- 
+        - #ENCART FINAL
+      -->
+
+      <section class="encart-final">
+        <div class="container aux-scroll">
+          <h2>Une question sur votre profil génétique ?</h2>
+          <p>
+            Nos biologistes et nos médecins vous reçoivent à la clinique, au quartier Avakpa,
+            en face du restaurant Art Résidence, à Porto-Novo.
+          </p>
+          <div class="actions">
+            <a href="tel:+2290194465252" class="btn-clair">Appeler la clinique</a>
+            <a href="./equipe.html" class="btn has-before title-md">Voir l'équipe et les tarifs</a>
+          </div>
+        </div>
+      </section>
+
+    </article>
   </main>
 
-  <!-- #FOOTER -->
 
-  <footer class="site-footer">
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contact" style="background-image: url('./assets/images/footer-bg.png')">
     <div class="container">
-      <p><strong>Clinique du Boulevard Lagunaire.</strong> Établissement de santé privé, ouvert 24h/24 et 7j/7.</p>
-      <nav aria-label="Liens de bas de page">
-        <a href="./index.html">Accueil</a>
-        <a href="./equipe.html">Équipe et tarifs</a>
-        <a href="./electrophorese.html">Électrophorèse</a>
-        <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank" rel="noopener">Facebook</a>
-        <a href="tel:+2290194465252" class="tel">01 94 46 52 52</a>
-      </nav>
+
+      <div class="section footer-top">
+
+        <div class="footer-brand" data-reveal="bottom">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" loading="lazy"
+              alt="Clinique du Boulevard Lagunaire, Porto-Novo">
+          </a>
+
+          <ul class="contact-list has-after">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Rendez-vous : <a href="tel:+2290194465252" class="contact-link">+229 01 94 46 52 52</a>
+                </p>
+
+                <p>
+                  Urgences (24h/24) : <a href="tel:+2290194465252" class="contact-link">+229 01 94 46 52 52</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="time-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Ouverture : <span class="contact-link">24h/24 et 7j/7</span>
+                </p>
+
+                <p>
+                  Permanence médicale continue
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">À propos</p>
+
+          <p class="text">
+            Clinique Médicale du Boulevard Lagunaire, établissement de santé privé à Porto-Novo.
+          </p>
+
+          <address class="address">
+            <ion-icon name="map-outline"></ion-icon>
+
+            <span class="text">
+              Avakpa, en face du restaurant Art Résidence <br>
+              Porto-Novo, Bénin
+            </span>
+          </address>
+
+        </div>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Nos services</p>
+          </li>
+
+          <li>
+            <a href="./index.html#services" class="text footer-link">Médecine générale</a>
+          </li>
+
+          <li>
+            <a href="./index.html#services" class="text footer-link">Urgences 24h/24</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Rhumatologie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Chirurgie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Orthopédie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Laboratoire d'analyses</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Liens utiles</p>
+          </li>
+
+          <li>
+            <a href="./index.html" class="text footer-link">Accueil</a>
+          </li>
+
+          <li>
+            <a href="./equipe.html" class="text footer-link">Équipe et tarifs</a>
+          </li>
+
+          <li>
+            <a href="./electrophorese.html" class="text footer-link">Simulateur d'électrophorèse</a>
+          </li>
+
+          <li>
+            <a href="tel:+2290194465252" class="text footer-link">Prendre rendez-vous</a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="text footer-link">Page Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener"
+              class="text footer-link">Instagram</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">Urgences &amp; Accessibilité</p>
+
+          <p class="text">
+            Permanence médicale continue, 24 heures sur 24 et 7 jours sur 7.
+          </p>
+
+          <a href="tel:+2290194465252" class="btn has-before title-md">Appeler maintenant</a>
+
+          <p class="text">
+            Entrée et parking accessibles aux personnes en fauteuil roulant.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="text copyright">
+          &copy; 2026 Clinique du Boulevard Lagunaire, Porto-Novo, Bénin | Tous droits réservés
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </div>
   </footer>
 
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Retour en haut" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
   <script src="./assets/js/electrophorese.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

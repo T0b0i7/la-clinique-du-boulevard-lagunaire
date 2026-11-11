@@ -3,514 +3,908 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- 
+    - primary meta tags
+  -->
   <title>Équipe médicale, plateau technique et tarifs. Clinique du Boulevard Lagunaire, Porto-Novo</title>
+  <meta name="title" content="Équipe médicale et tarifs. Clinique du Boulevard Lagunaire">
   <meta name="description" content="Découvrez l'équipe médicale de la Clinique du Boulevard Lagunaire à Porto-Novo, son plateau technique moderne, ses prises en charge, ses tarifs indicatifs et les consignes de préparation au laboratoire.">
 
+  <!-- 
+    - favicon
+  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
+  <!-- 
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="./assets/css/clinique.css">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/modules.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
 </head>
 
-<body>
+<body id="top">
 
-  <!-- #HEADER -->
+  <!-- 
+    - #PRELOADER
+  -->
 
-  <header class="site-header">
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
     <div class="container">
 
-      <a href="./index.html" class="marque">
-        <span class="marque-badge" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M10 2h4v6h6v4h-6v6h-4v-6H4v-4h6z" fill="#fff"/>
-          </svg>
-        </span>
-        <span>
-          Clinique du Boulevard Lagunaire
-          <small>Porto-Novo, Bénin</small>
-        </span>
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire, Porto-Novo">
       </a>
 
-      <nav class="nav-desktop" aria-label="Navigation principale">
-        <a href="./index.html">Accueil</a>
-        <a href="./index.html#services">Services</a>
-        <a href="./equipe.html" class="actif">Équipe et tarifs</a>
-        <a href="./electrophorese.html">Électrophorèse</a>
-        <a href="./index.html#contact">Contact</a>
-        <a href="tel:+2290194465252" class="nav-cta">Prendre rendez-vous</a>
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire, Porto-Novo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="Fermer le menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link title-md">Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#services" class="navbar-link title-md">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./equipe.html" class="navbar-link title-md">Équipe et tarifs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./electrophorese.html" class="navbar-link title-md">Électrophorèse</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#acces" class="navbar-link title-md">Accès</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#contact" class="navbar-link title-md">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Page Facebook de la clinique">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram de la clinique">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
       </nav>
 
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
-          <path d="M4 7h16M4 12h16M4 17h16"/>
-        </svg>
+      <button class="nav-open-btn" aria-label="Ouvrir le menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-    </div>
+      <a href="tel:+2290194465252" class="btn has-before title-md">Prendre rendez-vous</a>
 
-    <nav class="nav-mobile" id="nav-mobile" aria-label="Navigation mobile">
-      <a href="./index.html">Accueil</a>
-      <a href="./index.html#services">Services</a>
-      <a href="./equipe.html" class="actif">Équipe et tarifs</a>
-      <a href="./electrophorese.html">Électrophorèse</a>
-      <a href="./index.html#contact">Contact</a>
-      <a href="tel:+2290194465252">Prendre rendez-vous. 01 94 46 52 52</a>
-    </nav>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
   </header>
 
+
+
+
+
   <main>
+    <article>
 
-    <!-- #HERO -->
+      <!-- 
+        - #HERO
+      -->
 
-    <section class="page-hero">
-      <div class="container">
+      <section class="section hero hero-page" style="background-image: url('./assets/images/hero-bg.png')"
+        aria-label="Équipe et tarifs">
+        <div class="container">
 
-        <p class="texte-sage kicker reveal d1">Crédibilité et réassurance médicale</p>
+          <div class="hero-content">
 
-        <h1 class="reveal d2">La référence moderne des soins à <span style="white-space:nowrap">Porto-Novo.</span></h1>
+            <p class="hero-subtitle has-before" data-reveal="left">Crédibilité et réassurance médicale</p>
 
-        <p class="reveal d3">
-          Une équipe de praticiens expérimentés, un plateau technique moderne et une transparence
-          totale sur les prises en charge et les tarifs. La Clinique du Boulevard Lagunaire,
-          située au quartier Avakpa, vous accueille 24h/24 et 7j/7.
-        </p>
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              L'excellence médicale, <br>
+              <span style="white-space:nowrap">à Porto-Novo.</span>
+            </h1>
 
-      </div>
+            <p class="hero-texte" data-reveal="left">
+              Une équipe de praticiens expérimentés, un plateau technique moderne et une transparence
+              totale sur les prises en charge et les tarifs. Notre permanence vous accueille 24h/24 et 7j/7.
+            </p>
 
-      <svg class="vagues" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M0 40 C 240 80 480 0 720 30 C 960 60 1200 10 1440 40 L 1440 70 L 0 70 Z" fill="currentColor" opacity="0.15"/>
-        <path d="M0 50 C 260 15 520 70 780 40 C 1040 10 1240 60 1440 45 L 1440 70 L 0 70 Z" fill="currentColor"/>
-      </svg>
-    </section>
+          </div>
 
-    <!-- #EQUIPE MEDICALE -->
+        </div>
+      </section>
 
-    <section class="section" id="equipe" aria-labelledby="titre-equipe">
-      <div class="container">
 
-        <div class="entete-section aux-scroll">
-          <p class="texte-sage souligne" id="titre-equipe">Équipe médicale</p>
-          <h2>Des spécialistes dédiés à votre santé.</h2>
-          <p>
+
+
+
+      <!-- 
+        - #EQUIPE MEDICALE
+      -->
+
+      <section class="section-mod" id="equipe" aria-labelledby="titre-equipe">
+        <div class="container">
+
+          <p class="mod-kicker aux-scroll" id="titre-equipe">Équipe médicale</p>
+
+          <h2 class="mod-h2 aux-scroll">Des spécialistes dédiés à votre santé.</h2>
+
+          <p class="mod-texte aux-scroll">
             Nos praticiens associent formation solide, expérience du terrain et écoute attentive.
             Chaque médecin vous accompagne du diagnostic au suivi du traitement.
           </p>
+
+          <div class="grille-equipe">
+
+            <article class="carte-blanc carte-medecin aux-scroll">
+              <div class="medecin-visuel">
+                <span class="badge-spec">Médecine générale</span>
+                <svg viewBox="0 0 200 170" aria-hidden="true">
+                  <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
+                  <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
+                  <path d="M88 40 h6 v-6 h12 v6 h6 v12 h-6 v6 h-12 v-6 h-6 z" fill="#00ACB1"/>
+                </svg>
+              </div>
+              <div class="corps">
+                <h3>Dr Sètondji Ahounou</h3>
+                <p class="diplome">Docteur en médecine, Diplôme d'études spécialisées en médecine générale.</p>
+                <p class="stat-exp">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                  12 ans d'expérience
+                </p>
+                <a href="tel:+2290194465252" class="btn has-before title-md">
+                  <ion-icon name="calendar" aria-hidden="true"></ion-icon>
+                  Rendez-vous
+                </a>
+              </div>
+            </article>
+
+            <article class="carte-blanc carte-medecin aux-scroll">
+              <div class="medecin-visuel">
+                <span class="badge-spec">Rhumatologie</span>
+                <svg viewBox="0 0 200 170" aria-hidden="true">
+                  <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
+                  <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
+                  <circle cx="132" cy="38" r="10" fill="none" stroke="#00ACB1" stroke-width="4"/>
+                  <path d="M132 48 v18 M132 66 l-8 10 M132 66 l8 10" stroke="#00ACB1" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="corps">
+                <h3>Dr Nadia Kpossou</h3>
+                <p class="diplome">Docteur en médecine, Spécialisation en rhumatologie et médecine interne.</p>
+                <p class="stat-exp">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                  9 ans d'expérience
+                </p>
+                <a href="tel:+2290194465252" class="btn has-before title-md">
+                  <ion-icon name="calendar" aria-hidden="true"></ion-icon>
+                  Rendez-vous
+                </a>
+              </div>
+            </article>
+
+            <article class="carte-blanc carte-medecin aux-scroll">
+              <div class="medecin-visuel">
+                <span class="badge-spec">Orthopédie</span>
+                <svg viewBox="0 0 200 170" aria-hidden="true">
+                  <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
+                  <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
+                  <path d="M78 30 l14 8 M108 30 l-14 8 M85 38 h30" stroke="#00ACB1" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="corps">
+                <h3>Dr Marius Dossou</h3>
+                <p class="diplome">Docteur en médecine, CES d'orthopédie et de traumatologie chirurgicale.</p>
+                <p class="stat-exp">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                  15 ans d'expérience
+                </p>
+                <a href="tel:+2290194465252" class="btn has-before title-md">
+                  <ion-icon name="calendar" aria-hidden="true"></ion-icon>
+                  Rendez-vous
+                </a>
+              </div>
+            </article>
+
+            <article class="carte-blanc carte-medecin aux-scroll">
+              <div class="medecin-visuel">
+                <span class="badge-spec">Chirurgie</span>
+                <svg viewBox="0 0 200 170" aria-hidden="true">
+                  <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
+                  <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
+                  <path d="M70 28 L 98 62 M 130 28 L 102 62 M 92 66 h16" stroke="#00ACB1" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="corps">
+                <h3>Dr Firmin Adanhoumè</h3>
+                <p class="diplome">Docteur en médecine, Diplôme d'études spécialisées en chirurgie générale.</p>
+                <p class="stat-exp">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                  18 ans d'expérience
+                </p>
+                <a href="tel:+2290194465252" class="btn has-before title-md">
+                  <ion-icon name="calendar" aria-hidden="true"></ion-icon>
+                  Rendez-vous
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+          <p class="mod-note aux-scroll" style="margin-top:18px;">
+            La composition exacte de l'équipe de garde évolue selon les plannings. Notre permanence vous confirme
+            le praticien disponible lors de votre appel au +229 01 94 46 52 52.
+          </p>
+
         </div>
+      </section>
 
-        <div class="grille-equipe">
 
-          <article class="carte carte-medecin aux-scroll">
-            <div class="medecin-visuel">
-              <span class="badge-spec">Médecine générale</span>
-              <svg viewBox="0 0 200 170" aria-hidden="true">
-                <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
-                <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
-                <path d="M88 40 h6 v-6 h12 v6 h6 v12 h-6 v6 h-12 v-6 h-6 z" fill="#5E8272"/>
-              </svg>
-            </div>
-            <div class="corps">
-              <h3>Dr Sètondji Ahounou</h3>
-              <p class="diplome">Docteur en médecine, Diplôme d'études spécialisées en médecine générale.</p>
-              <p class="stat-exp">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-                12 ans d'expérience
-              </p>
-              <a href="tel:+2290194465252" class="btn btn-primaire">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c1 .3 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg>
-                Rendez-vous
-              </a>
-            </div>
-          </article>
 
-          <article class="carte carte-medecin aux-scroll">
-            <div class="medecin-visuel">
-              <span class="badge-spec">Rhumatologie</span>
-              <svg viewBox="0 0 200 170" aria-hidden="true">
-                <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
-                <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
-                <circle cx="132" cy="38" r="10" fill="none" stroke="#5E8272" stroke-width="4"/>
-                <path d="M132 48 v18 M132 66 l-8 10 M132 66 l8 10" stroke="#5E8272" stroke-width="4" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="corps">
-              <h3>Dr Nadia Kpossou</h3>
-              <p class="diplome">Docteur en médecine, Spécialisation en rhumatologie et médecine interne.</p>
-              <p class="stat-exp">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-                9 ans d'expérience
-              </p>
-              <a href="tel:+2290194465252" class="btn btn-primaire">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c1 .3 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg>
-                Rendez-vous
-              </a>
-            </div>
-          </article>
 
-          <article class="carte carte-medecin aux-scroll">
-            <div class="medecin-visuel">
-              <span class="badge-spec">Orthopédie</span>
-              <svg viewBox="0 0 200 170" aria-hidden="true">
-                <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
-                <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
-                <path d="M78 30 l14 8 M108 30 l-14 8 M85 38 h30" stroke="#5E8272" stroke-width="4" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="corps">
-              <h3>Dr Marius Dossou</h3>
-              <p class="diplome">Docteur en médecine, CES d'orthopédie et de traumatologie chirurgicale.</p>
-              <p class="stat-exp">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-                15 ans d'expérience
-              </p>
-              <a href="tel:+2290194465252" class="btn btn-primaire">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c1 .3 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg>
-                Rendez-vous
-              </a>
-            </div>
-          </article>
 
-          <article class="carte carte-medecin aux-scroll">
-            <div class="medecin-visuel">
-              <span class="badge-spec">Chirurgie</span>
-              <svg viewBox="0 0 200 170" aria-hidden="true">
-                <circle cx="100" cy="58" r="38" fill="#ffffff" opacity="0.95"/>
-                <path d="M30 170 C30 122 62 102 100 102 C138 102 170 122 170 170 Z" fill="#ffffff" opacity="0.95"/>
-                <path d="M70 28 L 98 62 M 130 28 L 102 62 M 92 66 h16" stroke="#5E8272" stroke-width="4" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="corps">
-              <h3>Dr Firmin Adanhoumè</h3>
-              <p class="diplome">Docteur en médecine, Diplôme d'études spécialisées en chirurgie générale.</p>
-              <p class="stat-exp">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-                18 ans d'expérience
-              </p>
-              <a href="tel:+2290194465252" class="btn btn-primaire">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c1 .3 2 .6 3 .7a2 2 0 0 1 1.7 2Z"/></svg>
-                Rendez-vous
-              </a>
-            </div>
-          </article>
+      <!-- 
+        - #PLATEAU TECHNIQUE
+      -->
 
-        </div>
+      <section class="section-mod foncee" id="plateau" aria-labelledby="titre-plateau">
+        <div class="container">
 
-        <p class="note" style="margin-top:18px; color:var(--gris-texte); font-size:0.85rem;">
-          La composition exacte de l'équipe de garde évolue selon les plannings. Notre permanence vous confirme
-          le praticien disponible lors de votre appel au 01 94 46 52 52.
-        </p>
+          <p class="mod-kicker aux-scroll" id="titre-plateau">Plateau technique</p>
 
-      </div>
-    </section>
+          <h2 class="mod-h2 aux-scroll">Des équipements modernes, un cadre pensé pour votre confort.</h2>
 
-    <!-- #PLATEAU TECHNIQUE -->
-
-    <section class="section section-foncee" id="plateau" aria-labelledby="titre-plateau">
-      <div class="container">
-
-        <div class="entete-section aux-scroll">
-          <p class="texte-sage souligne" id="titre-plateau">Plateau technique</p>
-          <h2>Des équipements modernes, un cadre pensé pour votre confort.</h2>
-          <p>
+          <p class="mod-texte aux-scroll">
             Explorez nos espaces de soins et nos installations. La clinique combine un cadre spacieux
             et des technologies fiables pour des examens et des soins en toute sérénité.
           </p>
-        </div>
 
-        <div class="galerie aux-scroll">
+          <div class="galerie aux-scroll">
 
-          <div class="galerie-nav" role="tablist" aria-label="Espaces de la clinique">
+            <div class="galerie-nav" role="tablist" aria-label="Espaces de la clinique">
 
-            <button class="actif" data-vitrine="labo" role="tab" aria-selected="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 2v6L4.5 18a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8V2M8 2h8M7 15h10"/></svg>
-              Laboratoire d'analyses
-            </button>
+              <button class="actif" data-vitrine="labo" role="tab" aria-selected="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 2v6L4.5 18a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8V2M8 2h8M7 15h10"/></svg>
+                Laboratoire d'analyses
+              </button>
 
-            <button data-vitrine="salle" role="tab" aria-selected="false">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16v12H4zM4 16h16M8 8V4h8v4M12 12v2"/></svg>
-              Salles de soins
-            </button>
+              <button data-vitrine="salle" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16v12H4zM4 16h16M8 8V4h8v4M12 12v2"/></svg>
+                Salles de soins
+              </button>
 
-            <button data-vitrine="cour" role="tab" aria-selected="false">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6"/></svg>
-              Cour spacieuse
-            </button>
+              <button data-vitrine="cour" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6"/></svg>
+                Cour spacieuse
+              </button>
 
-            <button data-vitrine="urgence" role="tab" aria-selected="false">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 8v4l3 2"/></svg>
-              Permanence 24h/24
-            </button>
+              <button data-vitrine="urgence" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 8v4l3 2"/></svg>
+                Permanence 24h/24
+              </button>
 
-            <button data-vitrine="acces" role="tab" aria-selected="false">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 8v6l5 5M12 12h4M9 11a5.5 5.5 0 1 0 4 9"/></svg>
-              Accès PMR et parking
-            </button>
+              <button data-vitrine="acces" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="2.5"/><path d="M12 8v6l5 5M12 12h4M9 11a5.5 5.5 0 1 0 4 9"/></svg>
+                Accès PMR et parking
+              </button>
 
-          </div>
+            </div>
 
-          <div class="galerie-vitrine" id="vitrine" role="tabpanel">
+            <div class="galerie-vitrine" id="vitrine" role="tabpanel">
 
-            <div class="galerie-decor" id="vitrine-decor" aria-hidden="true"></div>
+              <div class="galerie-decor" id="vitrine-decor" aria-hidden="true"></div>
 
-            <div class="galerie-fiche" id="vitrine-fiche">
-              <h3>Laboratoire d'analyses biomédicales</h3>
-              <p>
-                Notre laboratoire réalise sur place les analyses courantes et spécialisées,
-                dont l'électrophorèse de l'hémoglobine. Les prélèvements sont traités avec
-                rigueur, du recueil du prélèvement jusqu'à la remise des résultats.
-              </p>
-              <div class="fiche-tech">
-                <span>Électrophorèse de l'hémoglobine</span>
-                <span>Hématologie complète</span>
-                <span>Biochimie sanguine</span>
-                <span>Sérologies</span>
+              <div class="galerie-fiche" id="vitrine-fiche">
+                <h3>Laboratoire d'analyses biomédicales</h3>
+                <p>
+                  Notre laboratoire réalise sur place les analyses courantes et spécialisées,
+                  dont l'électrophorèse de l'hémoglobine. Les prélèvements sont traités avec
+                  rigueur, du recueil du prélèvement jusqu'à la remise des résultats.
+                </p>
+                <div class="fiche-tech">
+                  <span>Électrophorèse de l'hémoglobine</span>
+                  <span>Hématologie complète</span>
+                  <span>Biochimie sanguine</span>
+                  <span>Sérologies</span>
+                </div>
               </div>
+
             </div>
 
           </div>
 
         </div>
+      </section>
 
-      </div>
-    </section>
 
-    <!-- #INFORMATIONS PRATIQUES -->
 
-    <section class="section" id="infos" aria-labelledby="titre-infos">
-      <div class="container">
 
-        <div class="entete-section aux-scroll">
-          <p class="texte-sage souligne" id="titre-infos">Informations pratiques</p>
-          <h2>Transparence sur les prises en charge et les tarifs.</h2>
-          <p>
+
+      <!-- 
+        - #INFORMATIONS PRATIQUES
+      -->
+
+      <section class="section-mod" id="infos" aria-labelledby="titre-infos">
+        <div class="container">
+
+          <p class="mod-kicker aux-scroll" id="titre-infos">Informations pratiques</p>
+
+          <h2 class="mod-h2 aux-scroll">Transparence sur les prises en charge et les tarifs.</h2>
+
+          <p class="mod-texte aux-scroll">
             Nous clarifions d'emblée les modalités de paiement et les coûts indicatifs des actes
             les plus fréquents, pour que votre prise en charge se prépare sans surprise.
           </p>
+
+          <div class="bloc-transparence">
+
+            <article class="carte-blanc sous-bloc aux-scroll">
+              <h3>Assurances et mutuelles acceptées</h3>
+              <p class="note mod-note">
+                Utilisez le filtre pour afficher une catégorie. La couverture dépend de votre contrat,
+                contactez-nous avec votre carte ou votre attestation pour confirmation.
+              </p>
+
+              <div class="filtre-chips" id="filtre-prises" role="group" aria-label="Filtrer les prises en charge">
+                <button class="actif" data-categorie="tous">Toutes</button>
+                <button data-categorie="assurance">Assurances privées</button>
+                <button data-categorie="mutuelle">Mutuelles et entreprises</button>
+                <button data-categorie="etat">Prise en charge publique</button>
+                <button data-categorie="direct">Paiement direct</button>
+              </div>
+
+              <div class="grille-prises" id="grille-prises">
+
+                <div class="prise-carte" data-categorie="etat">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>CNSS</strong><small>Assurance sociale des travailleurs salariés</small></div>
+                </div>
+
+                <div class="prise-carte" data-categorie="assurance">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>Assurances santé privées</strong><small>Contrats individuels et familiaux</small></div>
+                </div>
+
+                <div class="prise-carte" data-categorie="mutuelle">
+                  <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>Mutuelles d'entreprise</strong><small>Employés du secteur privé et public</small></div>
+                </div>
+
+                <div class="prise-carte" data-categorie="assurance">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>Assurances internationales</strong><small>Expatriés, voyageurs et missions</small></div>
+                </div>
+
+                <div class="prise-carte" data-categorie="etat">
+                  <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>Prises en charge institutionnelles</strong><small>Dossiers validés par convention</small></div>
+                </div>
+
+                <div class="prise-carte" data-categorie="direct">
+                  <ion-icon name="card-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>Espèces et cartes bancaires</strong><small>Paiement direct à l'accueil</small></div>
+                </div>
+
+                <div class="prise-carte" data-categorie="direct">
+                  <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>Mobile Money</strong><small>MTN MoMo et Moov Money</small></div>
+                </div>
+
+                <div class="prise-carte" data-categorie="mutuelle">
+                  <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+                  <div><strong>Conventions entreprises</strong><small>Facturation mensuelle groupée</small></div>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="carte-blanc sous-bloc aux-scroll">
+              <h3>Tarifs indicatifs des actes courants</h3>
+              <p class="note mod-note">
+                Tarifs indicatifs en francs CFA, susceptibles d'évolution. Le devis définitif vous est
+                communiqué à l'accueil avant tout acte.
+              </p>
+
+              <div class="tableau-scroll">
+                <table class="tarifs">
+                  <caption>Montants arrondis en FCFA, hors consommables et frais d'hospitalisation.</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Acte ou consultation</th>
+                      <th scope="col">Service concerné</th>
+                      <th scope="col">Tarif indicatif</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Consultation de médecine générale</td><td>Médecine générale</td><td>5 000</td></tr>
+                    <tr><td>Consultation spécialisée</td><td>Rhumatologie, orthopédie, chirurgie</td><td>10 000</td></tr>
+                    <tr><td>Prise en charge aux urgences</td><td>Urgences 24h/24</td><td>7 000</td></tr>
+                    <tr><td>Électrophorèse de l'hémoglobine</td><td>Laboratoire</td><td>8 500</td></tr>
+                    <tr><td>Numération formule sanguine (NFS)</td><td>Laboratoire</td><td>4 000</td></tr>
+                    <tr><td>Glycémie à jeun</td><td>Laboratoire</td><td>2 000</td></tr>
+                    <tr><td>Bilan complet pré-opératoire</td><td>Laboratoire</td><td>25 000</td></tr>
+                    <tr><td>Plâtre et contention simple</td><td>Orthopédie</td><td>15 000</td></tr>
+                    <tr><td>Pansement et soins de petite chirurgie</td><td>Chirurgie</td><td>6 000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="carte-blanc sous-bloc aux-scroll">
+              <h3>Bien préparer votre examen au laboratoire</h3>
+              <p class="note mod-note">
+                Une bonne préparation garantit des résultats fiables. Ouvrez chaque rubrique
+                pour découvrir les consignes correspondantes.
+              </p>
+
+              <div class="accordeon" id="accordeon-labo">
+
+                <details open>
+                  <summary>
+                    Prise de sang
+                    <span class="chevron">
+                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                    </span>
+                  </summary>
+                  <div class="contenu">
+                    <p>La plupart des analyses sanguines exigent un prélèvement le matin, de préférence entre 7h et 10h.</p>
+                    <ul>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Être à jeun strict depuis 10 à 12 heures pour la glycémie, le bilan lipidique et le bilan pré-opératoire.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Boire de l'eau pure reste autorisé, mais éviter tout autre liquide, le café et le tabac.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Signaler tout traitement en cours, notamment les anticoagulants, au moment du prélèvement.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Prévoir un petit encas pour après le prélèvement, surtout si vous venez à plusieurs examens.</li>
+                    </ul>
+                  </div>
+                </details>
+
+                <details>
+                  <summary>
+                    Électrophorèse de l'hémoglobine
+                    <span class="chevron">
+                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                    </span>
+                  </summary>
+                  <div class="contenu">
+                    <p>Cet examen identifie votre profil génétique de l'hémoglobine (génotype AA, AS, AC, SS, SC ou CC).</p>
+                    <ul>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Aucune restriction alimentaire particulière, une simple prise de sang suffit.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Aucune préparation spéciale n'est nécessaire.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Idéal en couple avant un mariage ou une grossesse, pour anticiper les risques de transmission de la drépanocytose.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Estimez d'abord les probabilités avec notre simulateur, puis confirmez par le test au laboratoire.</li>
+                    </ul>
+                  </div>
+                </details>
+
+                <details>
+                  <summary>
+                    Bilan complet
+                    <span class="chevron">
+                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                    </span>
+                  </summary>
+                  <div class="contenu">
+                    <p>Le bilan de santé complet combine plusieurs analyses pour évaluer votre état général.</p>
+                    <ul>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>À jeun strict de 12 heures, eau pure seule autorisée.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Éviter l'alcool et l'effort intense 48 heures avant le prélèvement.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Apporter vos anciens résultats d'analyses et la liste de vos traitements.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Prévoir une heure de présence le matin pour l'ensemble des prélèvements.</li>
+                    </ul>
+                  </div>
+                </details>
+
+                <details>
+                  <summary>
+                    Autres examens courants
+                    <span class="chevron">
+                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                    </span>
+                  </summary>
+                  <div class="contenu">
+                    <p>Chaque examen a ses exigences. En cas de doute, notre laboratoire vous guide par téléphone.</p>
+                    <ul>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Analyse d'urine : prélèvement du matin, après toilette intime, au milieu du jet.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Sérologies : à jeun recommandé, mentionner toute vaccination récente.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Groupe sanguin : simple prise de sang, sans préparation.</li>
+                      <li><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon>Appeler le +229 01 94 46 52 52 pour toute consigne spécifique à votre examen.</li>
+                    </ul>
+                  </div>
+                </details>
+
+              </div>
+            </article>
+
+          </div>
+
         </div>
+      </section>
 
-        <div class="bloc-transparence">
 
-          <article class="carte sous-bloc aux-scroll">
-            <h3>Assurances et mutuelles acceptées</h3>
-            <p class="note">
-              Utilisez le filtre pour afficher une catégorie. La couverture dépend de votre contrat,
-              contactez-nous avec votre carte ou votre attestation pour confirmation.
-            </p>
 
-            <div class="filtre-chips" id="filtre-prises" role="group" aria-label="Filtrer les prises en charge">
-              <button class="actif" data-categorie="tous">Toutes</button>
-              <button data-categorie="assurance">Assurances privées</button>
-              <button data-categorie="mutuelle">Mutuelles et entreprises</button>
-              <button data-categorie="etat">Prise en charge publique</button>
-              <button data-categorie="direct">Paiement direct</button>
+
+
+      <!-- 
+        - #ACCES ET PLAN
+      -->
+
+      <section class="section-mod foncee" id="acces-plan" aria-labelledby="titre-acces-plan">
+        <div class="container">
+
+          <p class="mod-kicker aux-scroll" id="titre-acces-plan">Nous trouver</p>
+
+          <h2 class="mod-h2 aux-scroll">Accès à la clinique.</h2>
+
+          <p class="mod-texte aux-scroll">
+            La clinique est située au quartier Avakpa, en face du restaurant Art Résidence, à Porto-Novo.
+            Entrée principale et parking accessibles aux personnes en fauteuil roulant.
+          </p>
+
+          <div class="carte-acces aux-scroll">
+
+            <div class="plan">
+              <iframe
+                src="https://www.google.com/maps?q=Clinique+du+Boulevard+Lagunaire,+Avakpa,+Porto-Novo,+B%C3%A9nin&z=15&output=embed"
+                loading="lazy" title="Plan d'accès à la Clinique du Boulevard Lagunaire, Porto-Novo"
+                referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
             </div>
 
-            <div class="grille-prises" id="grille-prises">
-
-              <div class="prise-carte" data-categorie="etat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 3 7v5c0 5 4 8 9 9 5-1 9-4 9-9V7z"/></svg>
-                <div><strong>CNSS</strong><small>Assurance sociale des travailleurs salariés</small></div>
+            <div class="infos">
+              <h3>Informations d'accès</h3>
+              <div class="acces-item">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Adresse</strong>
+                  <span>Avakpa, en face du restaurant Art Résidence, Porto-Novo, Bénin</span>
+                </div>
               </div>
-
-              <div class="prise-carte" data-categorie="assurance">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 3 7v5c0 5 4 8 9 9 5-1 9-4 9-9V7z"/></svg>
-                <div><strong>Assurances santé privées</strong><small>Contrats individuels et familiaux</small></div>
+              <div class="acces-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Horaires</strong>
+                  <span>Ouvert 24h/24 et 7j/7, permanence médicale continue</span>
+                </div>
               </div>
-
-              <div class="prise-carte" data-categorie="mutuelle">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm14 10v-2a4 4 0 0 0-3-3.9"/></svg>
-                <div><strong>Mutuelles d'entreprise</strong><small>Employés du secteur privé et public</small></div>
+              <div class="acces-item">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Téléphone</strong>
+                  <span>+229 01 94 46 52 52</span>
+                </div>
               </div>
-
-              <div class="prise-carte" data-categorie="assurance">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 3 7v5c0 5 4 8 9 9 5-1 9-4 9-9V7z"/></svg>
-                <div><strong>Assurances internationales</strong><small>Expatriés, voyageurs et missions</small></div>
+              <div class="acces-item">
+                <ion-icon name="accessibility-outline" aria-hidden="true"></ion-icon>
+                <div>
+                  <strong>Accessibilité</strong>
+                  <span>Entrée et parking aménagés pour les fauteuils roulants</span>
+                </div>
               </div>
-
-              <div class="prise-carte" data-categorie="etat">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-4h6v4"/></svg>
-                <div><strong>Prises en charge institutionnelles</strong><small>Dossiers validés par convention</small></div>
-              </div>
-
-              <div class="prise-carte" data-categorie="direct">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
-                <div><strong>Espèces et cartes bancaires</strong><small>Paiement direct à l'accueil</small></div>
-              </div>
-
-              <div class="prise-carte" data-categorie="direct">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M11 18h2"/></svg>
-                <div><strong>Mobile Money</strong><small>MTN MoMo et Moov Money</small></div>
-              </div>
-
-              <div class="prise-carte" data-categorie="mutuelle">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h18M6 6h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
-                <div><strong>Conventions entreprises</strong><small>Facturation mensuelle groupée</small></div>
-              </div>
-
+              <a href="tel:+2290194465252" class="btn has-before title-md">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+                Appeler la clinique
+              </a>
             </div>
-          </article>
 
-          <article class="carte sous-bloc aux-scroll">
-            <h3>Tarifs indicatifs des actes courants</h3>
-            <p class="note">
-              Tarifs indicatifs en francs CFA, susceptibles d'évolution. Le devis définitif vous est
-              communiqué à l'accueil avant tout acte.
-            </p>
-
-            <div class="tableau-scroll">
-              <table class="tarifs">
-                <caption>Montants arrondis en FCFA, hors consommables et frais d'hospitalisation.</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Acte ou consultation</th>
-                    <th scope="col">Service concerné</th>
-                    <th scope="col">Tarif indicatif</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td>Consultation de médecine générale</td><td>Médecine générale</td><td>5 000</td></tr>
-                  <tr><td>Consultation spécialisée</td><td>Rhumatologie, orthopédie, chirurgie</td><td>10 000</td></tr>
-                  <tr><td>Prise en charge aux urgences</td><td>Urgences 24h/24</td><td>7 000</td></tr>
-                  <tr><td>Électrophorèse de l'hémoglobine</td><td>Laboratoire</td><td>8 500</td></tr>
-                  <tr><td>Numération formule sanguine (NFS)</td><td>Laboratoire</td><td>4 000</td></tr>
-                  <tr><td>Glycémie à jeun</td><td>Laboratoire</td><td>2 000</td></tr>
-                  <tr><td>Bilan complet pré-opératoire</td><td>Laboratoire</td><td>25 000</td></tr>
-                  <tr><td>Plâtre et contention simple</td><td>Orthopédie</td><td>15 000</td></tr>
-                  <tr><td>Pansement et soins de petite chirurgie</td><td>Chirurgie</td><td>6 000</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </article>
-
-          <article class="carte sous-bloc aux-scroll">
-            <h3>Bien préparer votre examen au laboratoire</h3>
-            <p class="note">
-              Une bonne préparation garantit des résultats fiables. Ouvrez chaque rubrique
-              pour découvrir les consignes correspondantes.
-            </p>
-
-            <div class="accordeon" id="accordeon-labo">
-
-              <details open>
-                <summary>
-                  Prise de sang
-                  <span class="chevron">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-                  </span>
-                </summary>
-                <div class="contenu">
-                  <p>La plupart des analyses sanguines exigent un prélèvement le matin, de préférence entre 7h et 10h.</p>
-                  <ul>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Être à jeun strict depuis 10 à 12 heures pour la glycémie, le bilan lipidique et le bilan pré-opératoire.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Boire de l'eau pure reste autorisé, mais éviter tout autre liquide, le café et le tabac.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Signaler tout traitement en cours, notamment les anticoagulants, au moment du prélèvement.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Prévoir un petit encas pour après le prélèvement, surtout si vous venez à plusieurs examens.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <details>
-                <summary>
-                  Électrophorèse de l'hémoglobine
-                  <span class="chevron">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-                  </span>
-                </summary>
-                <div class="contenu">
-                  <p>Cet examen identifie votre profil génétique de l'hémoglobine (génotype AA, AS, AC, SS, SC ou CC).</p>
-                  <ul>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Aucune restriction alimentaire particulière, une simple prise de sang suffit.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Aucune préparation spéciale n'est nécessaire.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Idéal en couple avant un mariage ou une grossesse, pour anticiper les risques de transmission de la drépanocytose.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Estimez d'abord les probabilités avec notre simulateur, puis confirmez par le test au laboratoire.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <details>
-                <summary>
-                  Bilan complet
-                  <span class="chevron">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-                  </span>
-                </summary>
-                <div class="contenu">
-                  <p>Le bilan de santé complet combine plusieurs analyses pour évaluer votre état général.</p>
-                  <ul>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>À jeun strict de 12 heures, eau pure seule autorisée.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Éviter l'alcool et l'effort intense 48 heures avant le prélèvement.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Apporter vos anciens résultats d'analyses et la liste de vos traitements.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Prévoir une heure de présence le matin pour l'ensemble des prélèvements.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <details>
-                <summary>
-                  Autres examens courants
-                  <span class="chevron">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
-                  </span>
-                </summary>
-                <div class="contenu">
-                  <p>Chaque examen a ses exigences. En cas de doute, notre laboratoire vous guide par téléphone.</p>
-                  <ul>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Analyse d'urine : prélèvement du matin, après toilette intime, au milieu du jet.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Sérologies : à jeun recommandé, mentionner toute vaccination récente.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Groupe sanguin : simple prise de sang, sans préparation.</li>
-                    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Appeler le 01 94 46 52 52 pour toute consigne spécifique à votre examen.</li>
-                  </ul>
-                </div>
-              </details>
-
-            </div>
-          </article>
+          </div>
 
         </div>
+      </section>
 
-      </div>
-    </section>
 
-    <!-- #ENCART RENDEZ-VOUS -->
 
-    <section class="encart-global">
-      <div class="container aux-scroll">
-        <h2>Votre santé mérite l'expertise.</h2>
-        <p>
-          Notre accueil est joignable jour et nuit. Appelez-nous ou passez directement
-          au quartier Avakpa, en face du restaurant Art Résidence, à Porto-Novo.
-        </p>
-        <div class="actions">
-          <a href="tel:+2290194465252" class="btn btn-blanc">Appeler le 01 94 46 52 52</a>
-          <a href="./electrophorese.html" class="btn btn-contour-blanc">Essayer le simulateur d'électrophorèse</a>
+
+
+      <!-- 
+        - #ENCART FINAL
+      -->
+
+      <section class="encart-final">
+        <div class="container aux-scroll">
+          <h2>Votre santé mérite l'expertise.</h2>
+          <p>
+            Notre accueil est joignable jour et nuit. Appelez-nous ou passez directement
+            au quartier Avakpa, en face du restaurant Art Résidence, à Porto-Novo.
+          </p>
+          <div class="actions">
+            <a href="tel:+2290194465252" class="btn-clair">Appeler le +229 01 94 46 52 52</a>
+            <a href="./electrophorese.html" class="btn has-before title-md">Simulateur d'électrophorèse</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+    </article>
   </main>
 
-  <!-- #FOOTER -->
 
-  <footer class="site-footer">
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contact" style="background-image: url('./assets/images/footer-bg.png')">
     <div class="container">
-      <p><strong>Clinique du Boulevard Lagunaire.</strong> Établissement de santé privé, ouvert 24h/24 et 7j/7.</p>
-      <nav aria-label="Liens de bas de page">
-        <a href="./index.html">Accueil</a>
-        <a href="./equipe.html">Équipe et tarifs</a>
-        <a href="./electrophorese.html">Électrophorèse</a>
-        <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank" rel="noopener">Facebook</a>
-        <a href="tel:+2290194465252" class="tel">01 94 46 52 52</a>
-      </nav>
+
+      <div class="section footer-top">
+
+        <div class="footer-brand" data-reveal="bottom">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" loading="lazy"
+              alt="Clinique du Boulevard Lagunaire, Porto-Novo">
+          </a>
+
+          <ul class="contact-list has-after">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Rendez-vous : <a href="tel:+2290194465252" class="contact-link">+229 01 94 46 52 52</a>
+                </p>
+
+                <p>
+                  Urgences (24h/24) : <a href="tel:+2290194465252" class="contact-link">+229 01 94 46 52 52</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="time-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Ouverture : <span class="contact-link">24h/24 et 7j/7</span>
+                </p>
+
+                <p>
+                  Permanence médicale continue
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">À propos</p>
+
+          <p class="text">
+            Clinique Médicale du Boulevard Lagunaire, établissement de santé privé à Porto-Novo.
+          </p>
+
+          <address class="address">
+            <ion-icon name="map-outline"></ion-icon>
+
+            <span class="text">
+              Avakpa, en face du restaurant Art Résidence <br>
+              Porto-Novo, Bénin
+            </span>
+          </address>
+
+        </div>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Nos services</p>
+          </li>
+
+          <li>
+            <a href="./index.html#services" class="text footer-link">Médecine générale</a>
+          </li>
+
+          <li>
+            <a href="./index.html#services" class="text footer-link">Urgences 24h/24</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Rhumatologie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Chirurgie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Orthopédie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Laboratoire d'analyses</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Liens utiles</p>
+          </li>
+
+          <li>
+            <a href="./index.html" class="text footer-link">Accueil</a>
+          </li>
+
+          <li>
+            <a href="./equipe.html" class="text footer-link">Équipe et tarifs</a>
+          </li>
+
+          <li>
+            <a href="./electrophorese.html" class="text footer-link">Simulateur d'électrophorèse</a>
+          </li>
+
+          <li>
+            <a href="tel:+2290194465252" class="text footer-link">Prendre rendez-vous</a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="text footer-link">Page Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener"
+              class="text footer-link">Instagram</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">Urgences &amp; Accessibilité</p>
+
+          <p class="text">
+            Permanence médicale continue, 24 heures sur 24 et 7 jours sur 7.
+          </p>
+
+          <a href="tel:+2290194465252" class="btn has-before title-md">Appeler maintenant</a>
+
+          <p class="text">
+            Entrée et parking accessibles aux personnes en fauteuil roulant.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="text copyright">
+          &copy; 2026 Clinique du Boulevard Lagunaire, Porto-Novo, Bénin | Tous droits réservés
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </div>
   </footer>
 
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Retour en haut" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
   <script src="./assets/js/equipe.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
