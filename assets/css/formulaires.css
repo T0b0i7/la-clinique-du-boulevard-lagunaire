@@ -1,0 +1,250 @@
+/*-----------------------------------*\
+  #FORMULAIRES
+  Styles des formulaires de rendez-vous et
+  de contact. Attention : le root du
+  template vaut html { font-size: 10px }.
+\*-----------------------------------*/
+
+
+
+/*-----------------------------------*\
+  #MISE EN PAGE
+\*-----------------------------------*/
+
+.formulaire { display: grid; gap: 20px; }
+
+/* l'attribut hidden doit gagner sur le display ci-dessus */
+
+.formulaire[hidden],
+.confirmation[hidden] { display: none; }
+
+.rangée-deux {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 620px) {
+  .rangée-deux { grid-template-columns: 1fr; }
+}
+
+
+
+/*-----------------------------------*\
+  #CHAMPS
+\*-----------------------------------*/
+
+.champ { display: grid; gap: 7px; }
+
+.champ label {
+  font-weight: var(--fw-700);
+  font-size: 1.5rem;
+  color: var(--midnight-green);
+}
+
+.obligatoire { display: inline; color: var(--ming); }
+
+.champ input,
+.champ select,
+.champ textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--gainsboro);
+  border-radius: var(--radius-6);
+  background-color: var(--alice-blue);
+  font-family: var(--ff-rubik);
+  font-size: 1.5rem;
+  color: var(--eerie-black);
+  transition: var(--transition-1);
+}
+
+.champ select { appearance: auto; }
+
+.champ textarea { resize: vertical; min-height: 110px; }
+
+.champ input:focus,
+.champ select:focus,
+.champ textarea:focus {
+  border-color: var(--verdigris);
+  background-color: var(--white);
+  outline: 2px solid var(--verdigris);
+  outline-offset: 1px;
+}
+
+.champ input.erreur,
+.champ select.erreur,
+.champ textarea.erreur {
+  border-color: var(--couleur-alerte);
+  background-color: var(--fond-alerte);
+}
+
+.aide-champ {
+  font-size: 1.25rem;
+  color: var(--independece);
+}
+
+.message-erreur {
+  font-size: 1.3rem;
+  font-weight: var(--fw-500);
+  color: var(--couleur-alerte-texte);
+}
+
+.formulaire-note { margin-top: -6px; }
+
+.bouton-envoyer { justify-self: start; padding-inline: 30px; }
+
+.bouton-envoyer[disabled] {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+
+
+/*-----------------------------------*\
+  #CONFIRMATION
+\*-----------------------------------*/
+
+.confirmation { display: grid; gap: 14px; justify-items: start; }
+
+.confirmation-icone {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  background-color: var(--ming);
+  color: var(--white);
+}
+
+.confirmation-icone ion-icon { font-size: 3.2rem; }
+
+.confirmation h3 {
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-500);
+  font-size: 2.6rem;
+  color: var(--midnight-green);
+}
+
+.confirmation-reference { font-size: 1.6rem; color: var(--independece); }
+
+.confirmation-reference strong {
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-700);
+  font-size: 2rem;
+  color: var(--midnight-green);
+  letter-spacing: 1px;
+}
+
+.confirmation-recap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 18px;
+  padding: 18px;
+  border-radius: var(--radius-6);
+  background-color: var(--alice-blue);
+  font-size: 1.5rem;
+}
+
+.confirmation-recap dt { font-weight: var(--fw-700); color: var(--midnight-green); }
+
+.confirmation-recap dd { color: var(--independece); }
+
+.confirmation-note { font-size: 1.4rem; color: var(--independece); }
+
+.confirmation-note .lien-telephone {
+  color: var(--ming);
+  font-weight: var(--fw-700);
+  text-decoration: underline;
+}
+
+.confirmation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn-secondaire {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border-radius: var(--radius-6);
+  border: 1.5px solid var(--gainsboro);
+  color: var(--midnight-green);
+  font-weight: var(--fw-700);
+  font-size: 1.5rem;
+  transition: var(--transition-1);
+}
+
+.btn-secondaire:hover { border-color: var(--midnight-green); }
+
+
+
+/*-----------------------------------*\
+  #COLONNE D'INFORMATIONS
+\*-----------------------------------*/
+
+.bloc-transparence .carte-info-rdv {
+  align-self: start;
+  padding: 34px;
+  border-radius: var(--radius-12);
+  background-color: var(--midnight-green);
+  background-image: url('../images/footer-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: var(--white);
+  box-shadow: var(--shadow-1);
+  display: grid;
+  gap: 16px;
+}
+
+.carte-info-rdv h3 {
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-500);
+  font-size: 2.2rem;
+}
+
+.carte-info-rdv > p { color: var(--alice-blue); font-size: 1.5rem; }
+
+.bouton-tel-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: var(--radius-6);
+  background-color: var(--verdigris);
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-700);
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  transition: var(--transition-1);
+}
+
+.bouton-tel-info:hover { background-color: hsl(182, 100%, 40%); }
+
+.bouton-tel-info ion-icon { font-size: 2.4rem; }
+
+.infos-pratiques { display: grid; gap: 12px; }
+
+.infos-pratiques li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: var(--alice-blue);
+  font-size: 1.4rem;
+}
+
+.infos-pratiques ion-icon {
+  font-size: 2.2rem;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--verdigris);
+  margin-top: 2px;
+}
+
+.carte-info-rdv .note-proto { color: var(--alice-blue); }

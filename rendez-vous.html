@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Prendre rendez-vous en ligne. Clinique du Boulevard Lagunaire, Porto-Novo</title>
+  <meta name="title" content="Prendre rendez-vous. Clinique du Boulevard Lagunaire">
+  <meta name="description" content="Demandez votre rendez-vous en ligne à la Clinique du Boulevard Lagunaire, Porto-Novo : médecine générale, urgences 24h/24, rhumatologie, chirurgie, orthopédie et laboratoire. Vous pouvez aussi appeler le +229 01 94 46 52 52, 24h/24 et 7j/7.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/modules.css">
+  <link rel="stylesheet" href="./assets/css/formulaires.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+  <link rel="preload" as="image" href="./assets/images/footer-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire, Porto-Novo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire, Porto-Novo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="Fermer le menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item rdv-mobile" aria-current="page">
+            <a href="./rendez-vous.html" class="navbar-link title-md" aria-current="page">Prendre rendez-vous</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link title-md">Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#services" class="navbar-link title-md">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./equipe.html" class="navbar-link title-md">Équipe et tarifs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./electrophorese.html" class="navbar-link title-md">Électrophorèse</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#acces" class="navbar-link title-md">Accès</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html#contact" class="navbar-link title-md">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Page Facebook de la clinique">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram de la clinique">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="Ouvrir le menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="./rendez-vous.html" class="btn has-before title-md" aria-current="page">Prendre rendez-vous</a>
+      <a href="tel:+2290194465252" class="btn-appeler" aria-label="Appeler la clinique au +229 01 94 46 52 52">
+        <ion-icon name="call" aria-hidden="true"></ion-icon>
+      </a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero hero-page" style="background-image: url('./assets/images/hero-bg.png')"
+        aria-label="Prise de rendez-vous">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle has-before" data-reveal="left">Prise de rendez-vous</p>
+
+            <h1 class="headline-lg hero-title" data-reveal="left">
+              Réservez votre <br>
+              <span style="white-space:nowrap">consultation.</span>
+            </h1>
+
+            <p class="hero-texte" data-reveal="left">
+              Remplissez le formulaire ci-dessous ou appelez directement le +229 01 94 46 52 52.
+              Notre accueil répond 24h/24 et 7j/7.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FORMULAIRE DE RENDEZ-VOUS
+      -->
+
+      <section class="section-mod" id="formulaire" aria-labelledby="titre-formulaire">
+        <div class="container">
+
+          <p class="mod-kicker aux-scroll" id="titre-formulaire">Demande de rendez-vous</p>
+
+          <h2 class="mod-h2 aux-scroll">Dites-nous quand vous souhaitez venir.</h2>
+
+          <p class="mod-texte aux-scroll">
+            Nous confirmons chaque demande par téléphone. Pour une urgence, n'attendez pas :
+            appelez immédiatement le +229 01 94 46 52 52, jour et nuit.
+          </p>
+
+          <div class="bloc-transparence aux-scroll">
+
+            <article class="carte-blanc sous-bloc">
+
+              <form id="form-rdv" class="formulaire" data-form-type="rendez-vous" novalidate>
+
+                <div class="champ">
+                  <label for="rdv-nom">Nom et prénoms <span class="obligatoire" aria-hidden="true">*</span></label>
+                  <input type="text" id="rdv-nom" name="nom" autocomplete="name" required
+                    placeholder="Ex. : Kodjo Ahounou" aria-required="true">
+                  <p class="message-erreur" id="erreur-rdv-nom" role="alert" hidden>Veuillez indiquer votre nom et prénoms.</p>
+                </div>
+
+                <div class="rangée-deux">
+
+                  <div class="champ">
+                    <label for="rdv-telephone">Téléphone <span class="obligatoire" aria-hidden="true">*</span></label>
+                    <input type="tel" id="rdv-telephone" name="telephone" autocomplete="tel" required
+                      placeholder="Ex. : +229 01 97 00 00 00" aria-required="true"
+                      aria-describedby="aide-telephone">
+                    <p class="aide-champ" id="aide-telephone">Format local ou international, ex. : +229 01 97 00 00 00.</p>
+                    <p class="message-erreur" id="erreur-rdv-telephone" role="alert" hidden>Veuillez indiquer un numéro de téléphone valide.</p>
+                  </div>
+
+                  <div class="champ">
+                    <label for="rdv-email">Email (facultatif)</label>
+                    <input type="email" id="rdv-email" name="email" autocomplete="email"
+                      placeholder="vous@exemple.com">
+                    <p class="message-erreur" id="erreur-rdv-email" role="alert" hidden>Veuillez indiquer une adresse email valide.</p>
+                  </div>
+
+                </div>
+
+                <div class="rangée-deux">
+
+                  <div class="champ">
+                    <label for="rdv-specialite">Spécialité ou service <span class="obligatoire" aria-hidden="true">*</span></label>
+                    <select id="rdv-specialite" name="specialite" required aria-required="true">
+                      <option value="" selected>Choisir un service</option>
+                      <option value="medecine-generale">Médecine générale</option>
+                      <option value="urgences">Urgences (24h/24)</option>
+                      <option value="rhumatologie">Rhumatologie</option>
+                      <option value="chirurgie">Chirurgie</option>
+                      <option value="orthopedie">Orthopédie</option>
+                      <option value="laboratoire">Laboratoire d'analyses biomédicales</option>
+                      <option value="electrophorese">Électrophorèse de l'hémoglobine</option>
+                      <option value="autre">Autre motif</option>
+                    </select>
+                    <p class="message-erreur" id="erreur-rdv-specialite" role="alert" hidden>Veuillez choisir un service.</p>
+                  </div>
+
+                  <div class="champ">
+                    <label for="rdv-medecin">Médecin souhaité (facultatif)</label>
+                    <select id="rdv-medecin" name="medecin">
+                      <option value="sans-preference" selected>Sans préférence</option>
+                      <optgroup label="Praticiens d'exemple (données fictives)">
+                        <option value="dr-setondji">Dr Sètondji Ahounou, médecine générale</option>
+                        <option value="dr-nadia">Dr Nadia Kpossou, rhumatologie</option>
+                        <option value="dr-marius">Dr Marius Dossou, orthopédie</option>
+                        <option value="dr-firmin">Dr Firmin Adanhoumè, chirurgie</option>
+                      </optgroup>
+                    </select>
+                  </div>
+
+                </div>
+
+                <div class="rangée-deux">
+
+                  <div class="champ">
+                    <label for="rdv-date">Date souhaitée <span class="obligatoire" aria-hidden="true">*</span></label>
+                    <input type="date" id="rdv-date" name="date" required aria-required="true">
+                    <p class="message-erreur" id="erreur-rdv-date" role="alert" hidden>Veuillez choisir une date à partir d'aujourd'hui.</p>
+                  </div>
+
+                  <div class="champ">
+                    <label for="rdv-creneau">Créneau souhaité <span class="obligatoire" aria-hidden="true">*</span></label>
+                    <select id="rdv-creneau" name="creneau" required aria-required="true">
+                      <option value="" selected>Choisir un créneau</option>
+                      <option value="matin">Matin (08h à 12h)</option>
+                      <option value="apres-midi">Après-midi (14h à 18h)</option>
+                      <option value="soir">Soir (18h à 21h)</option>
+                      <option value="nuit">Nuit (21h à 08h, urgence)</option>
+                    </select>
+                    <p class="message-erreur" id="erreur-rdv-creneau" role="alert" hidden>Veuillez choisir un créneau.</p>
+                  </div>
+
+                </div>
+
+                <div class="champ">
+                  <label for="rdv-motif">Motif de la consultation (facultatif)</label>
+                  <textarea id="rdv-motif" name="motif" rows="4"
+                    placeholder="Décrivez brièvement la raison de votre visite"></textarea>
+                </div>
+
+                <p class="note-proto formulaire-note">
+                  Prototype de démonstration. Les praticiens proposés sont fictifs.
+                </p>
+
+                <button type="submit" class="btn has-before title-md bouton-envoyer">
+                  Envoyer la demande
+                </button>
+
+              </form>
+
+              <div class="confirmation" id="confirmation-rdv" role="status" aria-live="polite" hidden>
+
+                <div class="confirmation-icone" aria-hidden="true">
+                  <ion-icon name="checkmark"></ion-icon>
+                </div>
+
+                <h3>Demande enregistrée.</h3>
+
+                <p class="confirmation-reference">
+                  Référence : <strong id="reference-rdv">CBL-RDV-...</strong>
+                </p>
+
+                <dl class="confirmation-recap" id="recap-rdv"></dl>
+
+                <p class="confirmation-note">
+                  Nous vous confirmons ce rendez-vous par téléphone. Pour accélérer ou pour une urgence,
+                  appelez le <a href="tel:+2290194465252" class="lien-telephone">+229 01 94 46 52 52</a>.
+                </p>
+
+                <div class="confirmation-actions">
+                  <a href="tel:+2290194465252" class="btn has-before title-md">
+                    <ion-icon name="call" aria-hidden="true"></ion-icon>
+                    Confirmer par téléphone
+                  </a>
+                  <a href="./index.html" class="btn-secondaire">Retour à l'accueil</a>
+                </div>
+
+              </div>
+
+            </article>
+
+            <aside class="carte-info-rdv" aria-label="Informations pratiques">
+
+              <h3>Vous préférez appeler ?</h3>
+
+              <p>
+                Notre accueil répond à toute heure, jour et nuit, y compris les dimanches et jours fériés.
+              </p>
+
+              <a href="tel:+2290194465252" class="bouton-tel-info">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+                <span>+229 01 94 46 52 52</span>
+              </a>
+
+              <ul class="infos-pratiques">
+
+                <li>
+                  <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                  <span>Avakpa, en face du restaurant Art Résidence, Porto-Novo</span>
+                </li>
+
+                <li>
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                  <span>Ouvert 24h/24 et 7j/7, permanence médicale continue</span>
+                </li>
+
+                <li>
+                  <ion-icon name="accessibility-outline" aria-hidden="true"></ion-icon>
+                  <span>Entrée et parking aménagés pour les fauteuils roulants</span>
+                </li>
+
+              </ul>
+
+              <p class="note-proto">
+                Prototype de démonstration. Les demandes envoyées depuis ce formulaire ne sont
+                pas encore transmises automatiquement à la clinique.
+              </p>
+
+            </aside>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ENCART FINAL
+      -->
+
+      <section class="encart-final">
+        <div class="container aux-scroll">
+          <h2>Une question avant de venir ?</h2>
+          <p>
+            Notre équipe vous renseigne sur les consultations, les examens et la préparation
+            au laboratoire. Appelez-nous ou passez directement à Avakpa, Porto-Novo.
+          </p>
+          <div class="actions">
+            <a href="tel:+2290194465252" class="btn-clair">Appeler le +229 01 94 46 52 52</a>
+            <a href="./equipe.html" class="btn has-before title-md">Voir l'équipe et les tarifs</a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contact" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" loading="lazy"
+              alt="Clinique du Boulevard Lagunaire, Porto-Novo">
+          </a>
+
+          <p class="text">
+            Clinique Médicale du Boulevard Lagunaire, établissement de santé privé à Porto-Novo.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <address class="address">
+                Avakpa, en face du restaurant Art Résidence <br>
+                Porto-Novo, Bénin
+              </address>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Rendez-vous : <a href="tel:+2290194465252" class="contact-link">+229 01 94 46 52 52</a>
+                </p>
+
+                <p>
+                  Urgences (24h/24) : <a href="tel:+2290194465252" class="contact-link">+229 01 94 46 52 52</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="time-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Ouverture : <span class="contact-link">24h/24 et 7j/7</span>
+                </p>
+
+                <p>
+                  Permanence médicale continue
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Nos services</p>
+          </li>
+
+          <li>
+            <a href="./index.html#services" class="text footer-link">Médecine générale</a>
+          </li>
+
+          <li>
+            <a href="./index.html#services" class="text footer-link">Urgences 24h/24</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Rhumatologie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Chirurgie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Orthopédie</a>
+          </li>
+
+          <li>
+            <a href="./index.html#specialites" class="text footer-link">Laboratoire d'analyses</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+
+          <li>
+            <p class="headline-sm footer-list-title">Liens utiles</p>
+          </li>
+
+          <li>
+            <a href="./index.html" class="text footer-link">Accueil</a>
+          </li>
+
+          <li>
+            <a href="./equipe.html" class="text footer-link">Équipe et tarifs</a>
+          </li>
+
+          <li>
+            <a href="./electrophorese.html" class="text footer-link">Simulateur d'électrophorèse</a>
+          </li>
+
+          <li>
+            <a href="./rendez-vous.html" class="text footer-link">Prendre rendez-vous</a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="text footer-link">Page Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener"
+              class="text footer-link">Instagram</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="headline-sm footer-list-title">Urgences &amp; Accessibilité</p>
+
+          <p class="text">
+            Permanence médicale continue, 24 heures sur 24 et 7 jours sur 7.
+          </p>
+
+          <a href="tel:+2290194465252" class="btn has-before title-md">Appeler maintenant</a>
+
+          <p class="text">
+            Entrée et parking accessibles aux personnes en fauteuil roulant.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="text copyright">
+          &copy; 2026 Clinique du Boulevard Lagunaire, Porto-Novo, Bénin | Tous droits réservés
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Retour en haut" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/formulaires.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

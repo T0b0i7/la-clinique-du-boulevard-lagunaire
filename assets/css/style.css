@@ -1169,7 +1169,75 @@ body.nav-active { overflow: hidden; }
 
 .navbar-link { white-space: nowrap; }
 
-/* evite tout debordement horizontal sur mobile,
-   les elements a reveler sont decales en dehors de l'ecran */
+
+
+
+
+/*-----------------------------------*\
+  #AJOUTS SPECIFIQUES AU SITE
+\*-----------------------------------*/
+
+:root {
+
+  /* teal fonce, plus lisible que le verdigris pour les petits textes */
+  --ming: hsl(186, 72%, 24%);
+
+  --couleur-alerte: hsl(14, 78%, 48%);
+  --fond-alerte: hsl(14, 90%, 96%);
+  --couleur-alerte-texte: hsl(14, 65%, 32%);
+
+}
+
+/* bouton d'appel du header, a cote du bouton de rendez-vous */
+
+.btn-appeler {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 44px;
+  border-radius: var(--radius-6);
+  border: 1.5px solid hsla(0, 0%, 100%, 0.5);
+  color: var(--white);
+  font-size: 2rem;
+  flex-shrink: 0;
+  transition: var(--transition-1);
+}
+
+.btn-appeler:hover { background-color: hsla(0, 0%, 100%, 0.12); }
+
+@media (min-width: 768px) { .btn-appeler { display: flex; } }
+
+/* note de demonstration reusable */
+
+.note-proto {
+  font-size: 1.3rem;
+  color: var(--independece);
+}
+
+/* ecart horizontal impossible : certains elements animes sont
+   decales en dehors de l'ecran avant leur apparition */
 
 html { overflow-x: hidden; }
+
+/* l'item « Prendre rendez-vous » de la navigation n'apparait
+   que dans le menu mobile, le header affiche deja le bouton */
+
+@media (min-width: 768px) {
+  .navbar-item.rdv-mobile { display: none; }
+}
+
+/* navigation desktop compacte : le header accueille maintenant
+   le bouton de rendez-vous et le bouton d'appel */
+
+@media (min-width: 992px) {
+  .header .container { gap: 16px; }
+  .navbar-list { gap: 0; }
+  .navbar-link { --title-md: 1.4rem; padding-inline: 10px; }
+  .header .btn { --title-md: 1.4rem; padding: 11px 20px; }
+
+  /* sur l'accueil, les raccourcis d'ancrage redondants avec
+     « Services » laissent la place aux boutons d'action ;
+     ils restent visibles dans le menu mobile */
+  .navbar-item.raccourci-desktop { display: none; }
+}

@@ -952,3 +952,36 @@ table.tarifs th:last-child {
 }
 
 .encart-final .btn-clair:hover { background-color: var(--alice-blue); }
+
+/*-----------------------------------*\
+  #ACTIONS DES CARTES MEDECIN
+\*-----------------------------------*/
+
+.actions-medecin {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.actions-medecin .btn {
+  flex: 1;
+  padding-inline: 16px;
+}
+
+.btn-appeler-icone {
+  width: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-6);
+  border: 1.5px solid var(--gainsboro);
+  color: var(--midnight-green);
+  font-size: 2.2rem;
+  flex-shrink: 0;
+  transition: var(--transition-1);
+}
+
+.btn-appeler-icone:hover {
+  border-color: var(--verdigris);
+  color: var(--verdigris);
+}
