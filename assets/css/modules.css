@@ -2,7 +2,8 @@
   #MODULES CSS
   Styles des pages "Equipe et tarifs" et
   "Electrophorese". Reutilise les variables
-  et la typographie du template principal.
+  du template principal. Attention : le root
+  du template vaut html { font-size: 10px }.
 \*-----------------------------------*/
 
 
@@ -15,14 +16,17 @@
 
 .hero-page .hero-content { max-width: 720px; }
 
-.hero-page .headline-lg { font-size: clamp(3.4rem, 7vw, 5rem); }
+.hero-page .headline-lg {
+  font-size: clamp(4.6rem, 9vw, 7rem);
+  line-height: 1.1;
+}
 
 .hero-page .hero-texte {
   margin-top: 26px;
   color: var(--alice-blue);
   font-size: var(--title-md);
   line-height: 1.6;
-  max-width: 620px;
+  max-width: 640px;
 }
 
 
@@ -33,7 +37,7 @@
   #STRUCTURE DE SECTION
 \*-----------------------------------*/
 
-.section-mod { padding-block: 100px; }
+.section-mod { padding-block: 100px; font-size: 1.6rem; }
 
 .section-mod.foncee { background-color: var(--alice-blue); }
 
@@ -43,7 +47,7 @@
   font-weight: var(--fw-700);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
 }
 
 .mod-kicker::after {
@@ -59,15 +63,15 @@
 .mod-h2 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-700);
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(3rem, 4vw, 4.8rem);
   line-height: 1.2;
   color: var(--midnight-green);
   margin-block: 14px 12px;
 }
 
-.mod-texte { color: var(--independece); max-width: 680px; }
+.mod-texte { color: var(--independece); max-width: 680px; font-size: 1.6rem; }
 
-.mod-note { color: var(--independece); font-size: 0.9rem; }
+.mod-note { color: var(--independece); font-size: 1.4rem; }
 
 .carte-blanc {
   background-color: var(--white);
@@ -75,6 +79,7 @@
   border-radius: var(--radius-12);
   box-shadow: var(--shadow-1);
   transition: var(--transition-2);
+  min-width: 0;
 }
 
 .carte-blanc:hover {
@@ -141,7 +146,7 @@
   border-radius: 999px;
   background-color: var(--midnight-green);
   color: var(--white);
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: var(--fw-700);
 }
 
@@ -156,11 +161,11 @@
 .carte-medecin h3 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   color: var(--midnight-green);
 }
 
-.carte-medecin .diplome { color: var(--independece); font-size: 0.92rem; }
+.carte-medecin .diplome { color: var(--independece); font-size: 1.4rem; }
 
 .carte-medecin .stat-exp {
   display: flex;
@@ -168,7 +173,7 @@
   gap: 10px;
   font-weight: var(--fw-700);
   color: var(--verdigris);
-  font-size: 0.95rem;
+  font-size: 1.5rem;
 }
 
 .carte-medecin .stat-exp svg { width: 18px; height: 18px; }
@@ -203,7 +208,7 @@
   background-color: var(--white);
   text-align: left;
   font-weight: var(--fw-500);
-  font-size: 0.98rem;
+  font-size: 1.5rem;
   color: var(--midnight-green);
   transition: var(--transition-1);
 }
@@ -261,11 +266,11 @@
 .galerie-fiche h3 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin-bottom: 8px;
 }
 
-.galerie-fiche p { color: var(--alice-blue); font-size: 0.95rem; }
+.galerie-fiche p { color: var(--alice-blue); font-size: 1.5rem; }
 
 .fiche-tech { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
 
@@ -274,7 +279,7 @@
   border-radius: 999px;
   background-color: hsla(174, 60%, 50%, 0.3);
   border: 1px solid hsla(174, 60%, 60%, 0.5);
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   font-weight: var(--fw-500);
 }
 
@@ -293,14 +298,19 @@
   #TRANSPARENCE
 \*-----------------------------------*/
 
-.bloc-transparence { margin-top: 48px; display: grid; gap: 30px; }
+.bloc-transparence {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 30px;
+}
 
-.sous-bloc { padding: 34px; }
+.sous-bloc { padding: 34px; min-width: 0; }
 
 .sous-bloc h3 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   color: var(--midnight-green);
   margin-bottom: 6px;
 }
@@ -314,7 +324,7 @@
   border-radius: 999px;
   border: 1.5px solid var(--gainsboro);
   font-weight: var(--fw-500);
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   color: var(--midnight-green);
   transition: var(--transition-1);
 }
@@ -348,18 +358,18 @@
 
 .prise-carte svg { width: 20px; height: 20px; color: var(--verdigris); flex-shrink: 0; }
 
-.prise-carte strong { font-size: 0.95rem; display: block; color: var(--midnight-green); }
+.prise-carte strong { font-size: 1.5rem; display: block; color: var(--midnight-green); }
 
-.prise-carte small { color: var(--independece); }
+.prise-carte small { color: var(--independece); font-size: 1.25rem; }
 
-.tableau-scroll { overflow-x: auto; border-radius: var(--radius-6); border: 1px solid var(--gainsboro); }
+.tableau-scroll { overflow-x: auto; border-radius: var(--radius-6); border: 1px solid var(--gainsboro); -webkit-overflow-scrolling: touch; }
 
 table.tarifs {
   width: 100%;
   border-collapse: collapse;
   min-width: 620px;
   background-color: var(--white);
-  font-size: 0.95rem;
+  font-size: 1.5rem;
 }
 
 table.tarifs th,
@@ -374,7 +384,7 @@ table.tarifs thead th {
   color: var(--white);
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
@@ -409,7 +419,7 @@ table.tarifs th:last-child {
   padding: 18px 22px;
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   color: var(--midnight-green);
   cursor: pointer;
   transition: var(--transition-1);
@@ -431,11 +441,14 @@ table.tarifs th:last-child {
   transition: transform var(--transition-2);
 }
 
+.accordeon summary .chevron ion-icon { font-size: 1.8rem; }
+
 .accordeon details[open] summary .chevron { transform: rotate(180deg); }
 
 .accordeon .contenu {
   padding: 0 22px 22px;
   color: var(--independece);
+  font-size: 1.5rem;
   animation: mod-deroule 0.4s ease;
 }
 
@@ -447,7 +460,9 @@ table.tarifs th:last-child {
 
 .accordeon .contenu li { display: flex; gap: 10px; }
 
-.accordeon .contenu li svg {
+.accordeon .contenu li svg,
+.accordeon .contenu li ion-icon {
+  font-size: 1.8rem;
   width: 18px;
   height: 18px;
   color: var(--verdigris);
@@ -496,14 +511,15 @@ table.tarifs th:last-child {
 .carte-acces .infos h3 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.5rem;
+  font-size: 2.2rem;
 }
 
-.carte-acces .infos p { color: var(--alice-blue); font-size: 0.95rem; }
+.carte-acces .infos p { color: var(--alice-blue); font-size: 1.5rem; }
 
 .acces-item { display: flex; gap: 12px; align-items: flex-start; }
 
-.acces-item svg {
+.acces-item ion-icon {
+  font-size: 2.4rem;
   width: 22px;
   height: 22px;
   flex-shrink: 0;
@@ -511,9 +527,9 @@ table.tarifs th:last-child {
   margin-top: 3px;
 }
 
-.acces-item strong { display: block; font-size: 0.98rem; }
+.acces-item strong { display: block; font-size: 1.5rem; }
 
-.acces-item span { color: var(--alice-blue); font-size: 0.9rem; }
+.acces-item span { color: var(--alice-blue); font-size: 1.4rem; }
 
 @media (max-width: 960px) {
   .carte-acces { grid-template-columns: 1fr; }
@@ -553,7 +569,7 @@ table.tarifs th:last-child {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: var(--verdigris);
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .parents {
@@ -567,10 +583,10 @@ table.tarifs th:last-child {
 .parent-bloc h3 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
-.parent-bloc .indice { color: var(--alice-blue); font-size: 0.9rem; }
+.parent-bloc .indice { color: var(--alice-blue); font-size: 1.4rem; }
 
 .genotypes {
   margin-top: 16px;
@@ -587,7 +603,7 @@ table.tarifs th:last-child {
   color: var(--white);
   font-family: var(--ff-oswald);
   font-weight: var(--fw-700);
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   letter-spacing: 1px;
   transition: var(--transition-1);
   position: relative;
@@ -615,7 +631,7 @@ table.tarifs th:last-child {
   border-radius: var(--radius-circle);
   background-color: var(--white);
   color: var(--midnight-green);
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   display: grid;
   place-items: center;
 }
@@ -629,7 +645,7 @@ table.tarifs th:last-child {
   display: grid;
   place-items: center;
   font-weight: var(--fw-700);
-  font-size: 1.25rem;
+  font-size: 2rem;
   background-color: hsla(0, 0%, 100%, 0.14);
   border: 2px dashed hsla(0, 0%, 100%, 0.35);
   transition: var(--transition-2);
@@ -703,7 +719,7 @@ table.tarifs th:last-child {
 .resultats-titre h3 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 .btn-contour {
@@ -715,7 +731,7 @@ table.tarifs th:last-child {
   border: 1.5px solid hsla(0, 0%, 100%, 0.5);
   color: var(--white);
   font-weight: var(--fw-700);
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   transition: var(--transition-1);
 }
 
@@ -752,11 +768,11 @@ table.tarifs th:last-child {
 .jauge .ge {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-700);
-  font-size: 1.3rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
-.jauge .pourcent { font-weight: var(--fw-700); font-size: 1.7rem; }
+.jauge .pourcent { font-weight: var(--fw-700); font-size: 2.6rem; }
 
 .jauge .piste {
   margin-block: 12px 10px;
@@ -782,7 +798,7 @@ table.tarifs th:last-child {
 .jauge.porteur .pourcent { color: hsl(45, 90%, 65%); }
 .jauge.risque .pourcent { color: hsl(14, 90%, 68%); }
 
-.jauge .statut { font-size: 0.84rem; font-weight: var(--fw-500); color: var(--alice-blue); line-height: 1.45; }
+.jauge .statut { font-size: 1.4rem; font-weight: var(--fw-500); color: var(--alice-blue); line-height: 1.45; }
 
 .explication {
   margin-top: 22px;
@@ -790,13 +806,14 @@ table.tarifs th:last-child {
   border-radius: var(--radius-6);
   background-color: var(--white);
   color: var(--eerie-black);
+  font-size: 1.5rem;
   animation: mod-glisser 0.6s ease;
 }
 
 .explication h4 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: var(--midnight-green);
   margin-bottom: 4px;
 }
@@ -804,11 +821,11 @@ table.tarifs th:last-child {
 .explication .resume-couple {
   color: var(--verdigris);
   font-weight: var(--fw-700);
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   margin-bottom: 12px;
 }
 
-.explication p { font-size: 0.95rem; color: var(--independece); }
+.explication p { font-size: 1.5rem; color: var(--independece); }
 
 .explication p + p { margin-top: 10px; }
 
@@ -817,7 +834,7 @@ table.tarifs th:last-child {
 .explication li {
   display: flex;
   gap: 10px;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   color: var(--independece);
 }
 
@@ -845,11 +862,11 @@ table.tarifs th:last-child {
 .encart-cta h3 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   margin-bottom: 6px;
 }
 
-.encart-cta p { max-width: 560px; color: hsl(187, 30%, 94%); font-size: 0.95rem; }
+.encart-cta p { max-width: 560px; color: hsl(187, 30%, 94%); font-size: 1.5rem; }
 
 .encart-cta .btn { background-color: var(--midnight-green); }
 
@@ -863,10 +880,11 @@ table.tarifs th:last-child {
   background-color: hsl(14, 90%, 95%);
   border: 1px solid hsl(14, 70%, 85%);
   color: hsl(14, 60%, 30%);
-  font-size: 0.92rem;
+  font-size: 1.45rem;
 }
 
-.avertissement svg {
+.avertissement ion-icon {
+  font-size: 2.4rem;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -890,6 +908,7 @@ table.tarifs th:last-child {
 
 .encart-final {
   padding-block: 90px;
+  font-size: 1.6rem;
   background-color: var(--midnight-green);
   background-image: url('../images/footer-bg.png');
   background-size: contain;
@@ -902,13 +921,14 @@ table.tarifs th:last-child {
 .encart-final h2 {
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
-  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-size: clamp(2.8rem, 4vw, 3.8rem);
 }
 
 .encart-final p {
   margin: 14px auto 28px;
   max-width: 580px;
   color: var(--alice-blue);
+  font-size: 1.6rem;
 }
 
 .encart-final .actions {
@@ -927,6 +947,7 @@ table.tarifs th:last-child {
   background-color: var(--white);
   color: var(--midnight-green);
   font-weight: var(--fw-700);
+  font-size: 1.6rem;
   transition: var(--transition-1);
 }
 

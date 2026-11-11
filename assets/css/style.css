@@ -1168,3 +1168,8 @@ body.nav-active { overflow: hidden; }
 }
 
 .navbar-link { white-space: nowrap; }
+
+/* evite tout debordement horizontal sur mobile,
+   les elements a reveler sont decales en dehors de l'ecran */
+
+html { overflow-x: hidden; }
