@@ -1257,6 +1257,8 @@ html { overflow-x: hidden; }
 
 .back-top-btn { bottom: 48px; }
 
+.header .btn { white-space: nowrap; }
+
 /* navigation desktop compacte : le header accueille maintenant
    le bouton de rendez-vous et le bouton d'appel */
 
