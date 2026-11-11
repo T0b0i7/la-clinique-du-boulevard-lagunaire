@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -9,9 +9,9 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Doclab - home</title>
-  <meta name="title" content="Doclab - home">
-  <meta name="description" content="This is a madical html template made by codewithsadee">
+  <title>Clinique du Boulevard Lagunaire — Clinique privée à Porto-Novo (24h/24, 7j/7)</title>
+  <meta name="title" content="Clinique du Boulevard Lagunaire — Clinique privée à Porto-Novo">
+  <meta name="description" content="La Clinique du Boulevard Lagunaire est un établissement de santé privé situé à Avakpa, Porto-Novo. Consultations généralistes et spécialisées, urgences 24h/24, laboratoire d'analyses. Prise de rendez-vous : 01 94 46 52 52.">
 
   <!-- 
     - favicon
@@ -53,6 +53,7 @@
 
 
 
+
   <!-- 
     - #HEADER
   -->
@@ -60,19 +61,19 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home">
+      <a href="#top" class="logo">
+        <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire — Porto-Novo">
       </a>
 
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home">
+          <a href="#top" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" alt="Clinique du Boulevard Lagunaire — Porto-Novo">
           </a>
 
-          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+          <button class="nav-close-btn" aria-label="Fermer le menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
 
@@ -81,23 +82,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Home</a>
+            <a href="#accueil" class="navbar-link title-md">Accueil</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Doctors</a>
+            <a href="#services" class="navbar-link title-md">Services</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Services</a>
+            <a href="#apropos" class="navbar-link title-md">À propos</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Blog</a>
+            <a href="#specialites" class="navbar-link title-md">Spécialités</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Contact</a>
+            <a href="#contact" class="navbar-link title-md">Contact</a>
           </li>
 
         </ul>
@@ -105,32 +106,22 @@
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Page Facebook de la clinique">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-pinterest"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram de la clinique">
               <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
 
@@ -138,11 +129,11 @@
 
       </nav>
 
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+      <button class="nav-open-btn" aria-label="Ouvrir le menu" data-nav-toggler>
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-      <a href="#" class="btn has-before title-md">Make Appointment</a>
+      <a href="tel:+2290194465252" class="btn has-before title-md">Prendre rendez-vous</a>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -160,37 +151,38 @@
         - #HERO
       -->
 
-      <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
+      <section class="section hero" id="accueil"
+        style="background-image: url('./assets/images/hero-bg.png')" aria-label="Accueil">
         <div class="container">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle has-before" data-reveal="left">Welcome To Doclab</p>
+            <p class="hero-subtitle has-before" data-reveal="left">Bienvenue à la Clinique du Boulevard Lagunaire</p>
 
             <h1 class="headline-lg hero-title" data-reveal="left">
-              Find Nearest <br>
-              Doctor.
+              Votre santé, notre priorité. <br>
+              24h/24 — 7j/7.
             </h1>
 
             <div class="hero-card" data-reveal="left">
 
               <p class="title-lg card-text">
-                Search doctors. clinics. hospitals. etc.
+                Prise de rendez-vous et permanence médicale continue.
               </p>
 
               <div class="wrapper">
 
                 <div class="input-wrapper title-lg">
-                  <input type="text" name="location" placeholder="Locations" class="input-field">
+                  <span class="input-field title-lg">01 94 46 52 52</span>
 
-                  <ion-icon name="location"></ion-icon>
+                  <ion-icon name="call"></ion-icon>
                 </div>
 
-                <button class="btn has-before">
-                  <ion-icon name="search"></ion-icon>
+                <a href="tel:+2290194465252" class="btn has-before">
+                  <ion-icon name="calendar"></ion-icon>
 
-                  <span class="span title-md">Find Now</span>
-                </button>
+                  <span class="span title-md">Appeler la clinique</span>
+                </a>
 
               </div>
 
@@ -199,8 +191,8 @@
           </div>
 
           <figure class="hero-banner" data-reveal="right">
-            <img src="./assets/images/hero-banner.png" width="590" height="517" loading="eager" alt="hero banner"
-              class="w-100">
+            <img src="./assets/images/hero-banner.png" width="590" height="517" loading="eager"
+              alt="Soins médicaux à la Clinique du Boulevard Lagunaire" class="w-100">
           </figure>
 
         </div>
@@ -214,7 +206,7 @@
         - #SERVICE
       -->
 
-      <section class="service" aria-label="service">
+      <section class="service" id="services" aria-label="Nos services">
         <div class="container">
 
           <ul class="service-list">
@@ -223,20 +215,20 @@
               <div class="service-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="Icône médecine générale">
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Psychiatry</a>
+                  <a href="#specialites">Médecine générale</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Consultations généralistes et suivi médical personnalisé pour toute la famille.
                 </p>
 
-                <button class="btn-circle" aria-label="read more about psychiatry">
+                <a href="tel:+2290194465252" class="btn-circle" aria-label="Prendre rendez-vous en médecine générale">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
+                </a>
 
               </div>
             </li>
@@ -245,20 +237,20 @@
               <div class="service-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="Icône urgences 24h/24">
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Gynecology</a>
+                  <a href="#specialites">Urgences 24h/24</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Permanence médicale continue, ouverte 24 heures sur 24 et 7 jours sur 7.
                 </p>
 
-                <button class="btn-circle" aria-label="read more about Gynecology">
+                <a href="tel:+2290194465252" class="btn-circle" aria-label="Contacter le service des urgences">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
+                </a>
 
               </div>
             </li>
@@ -267,20 +259,20 @@
               <div class="service-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="Icône rhumatologie">
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Pulmonology</a>
+                  <a href="#specialites">Rhumatologie</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Prise en charge des douleurs articulaires et des maladies rhumatismales.
                 </p>
 
-                <button class="btn-circle" aria-label="read more about Pulmonology">
+                <a href="tel:+2290194465252" class="btn-circle" aria-label="Prendre rendez-vous en rhumatologie">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
+                </a>
 
               </div>
             </li>
@@ -289,20 +281,20 @@
               <div class="service-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="Icône chirurgie et orthopédie">
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Orthopedics</a>
+                  <a href="#specialites">Chirurgie &amp; Orthopédie</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Consultations spécialisées et prise en charge médico-chirurgicale.
                 </p>
 
-                <button class="btn-circle" aria-label="read more about Orthopedics">
+                <a href="tel:+2290194465252" class="btn-circle" aria-label="Prendre rendez-vous en chirurgie et orthopédie">
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
+                </a>
 
               </div>
             </li>
@@ -320,39 +312,40 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-labelledby="about-label">
+      <section class="section about" id="apropos" aria-labelledby="about-label">
         <div class="container">
 
           <div class="about-content">
 
-            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">About Us</p>
+            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">À propos de nous</p>
 
-            <h2 class="headline-md" data-reveal="left">Experienced Workers</h2>
+            <h2 class="headline-md" data-reveal="left">Une clinique moderne au cœur de Porto-Novo</h2>
 
             <p class="section-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
-              Aliquam
+              La Clinique du Boulevard Lagunaire est un établissement de santé privé situé dans le quartier Avakpa,
+              en face du restaurant Art Résidence, à Porto-Novo. Elle propose une prise en charge médicale continue
+              avec des consultations généralistes et spécialisées.
             </p>
 
             <ul class="tab-list" data-reveal="left">
 
               <li>
-                <button class="tab-btn active">Vision</button>
+                <button class="tab-btn active">Notre mission</button>
               </li>
 
               <li>
-                <button class="tab-btn">Mission</button>
+                <button class="tab-btn">Notre cadre</button>
               </li>
 
               <li>
-                <button class="tab-btn">Strategy</button>
+                <button class="tab-btn">Accessibilité</button>
               </li>
 
             </ul>
 
             <p class="tab-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
-              Aliquam a bibendum mi, sed condimentum
+              Assurer une prise en charge médicale continue et de qualité, avec une permanence ouverte 24 heures sur 24
+              et 7 jours sur 7, au service des habitants d'Avakpa, de Porto-Novo et des environs.
             </p>
 
             <div class="wrapper">
@@ -362,25 +355,25 @@
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Sonsectetur adipisicing elit</span>
+                  <span class="span">Cadre moderne, propre et bien équipé</span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Exercitation ullamco laboris</span>
+                  <span class="span">Cour spacieuse et salles équipées</span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Eiusmod tempor incididunt</span>
+                  <span class="span">Entrée principale accessible aux fauteuils roulants</span>
                 </li>
 
                 <li class="about-item" data-reveal="left">
                   <ion-icon name="checkmark-circle-outline"></ion-icon>
 
-                  <span class="span">Aolore magna aliqua</span>
+                  <span class="span">Parking adapté aux personnes à mobilité réduite</span>
                 </li>
 
               </ul>
@@ -390,8 +383,8 @@
           </div>
 
           <figure class="about-banner" data-reveal="right">
-            <img src="./assets/images/about-banner.png" width="554" height="678" loading="lazy" alt="about banner"
-              class="w-100">
+            <img src="./assets/images/about-banner.png" width="554" height="678" loading="lazy"
+              alt="Équipe médicale de la Clinique du Boulevard Lagunaire" class="w-100">
           </figure>
 
         </div>
@@ -405,28 +398,28 @@
         - #LISTING
       -->
 
-      <section class="section listing" aria-labelledby="listing-label">
+      <section class="section listing" id="specialites" aria-labelledby="listing-label">
         <div class="container">
 
           <ul class="grid-list">
 
             <li>
-              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listig</p>
+              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Nos spécialités</p>
 
-              <h2 class="headline-md" data-reveal="left">Browse by specialist</h2>
+              <h2 class="headline-md" data-reveal="left">Une prise en charge complète</h2>
             </li>
 
             <li>
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="Icône médecine générale">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Psychiatry</h3>
+                  <h3 class="headline-sm card-title">Médecine générale</h3>
 
-                  <p class="card-text">Porta velit</p>
+                  <p class="card-text">Consultations et suivi</p>
                 </div>
 
               </div>
@@ -436,13 +429,13 @@
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="Icône urgences">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Gynecology</h3>
+                  <h3 class="headline-sm card-title">Urgences</h3>
 
-                  <p class="card-text">Mattis augue</p>
+                  <p class="card-text">Ouvert 24h/24 — 7j/7</p>
                 </div>
 
               </div>
@@ -452,13 +445,13 @@
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="Icône rhumatologie">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Pulmonology</h3>
+                  <h3 class="headline-sm card-title">Rhumatologie</h3>
 
-                  <p class="card-text">Mauris laoreet</p>
+                  <p class="card-text">Douleurs articulaires</p>
                 </div>
 
               </div>
@@ -468,13 +461,13 @@
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="Icône chirurgie">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Orthopedics</h3>
+                  <h3 class="headline-sm card-title">Chirurgie</h3>
 
-                  <p class="card-text">Convallis vulputate</p>
+                  <p class="card-text">Prise en charge chirurgicale</p>
                 </div>
 
               </div>
@@ -484,13 +477,13 @@
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="Icône orthopédie">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Pediatrics</h3>
+                  <h3 class="headline-sm card-title">Orthopédie</h3>
 
-                  <p class="card-text">Posuere maecenas</p>
+                  <p class="card-text">Soins osseux et articulaires</p>
                 </div>
 
               </div>
@@ -500,13 +493,13 @@
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="Icône laboratoire d'analyses">
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Osteology</h3>
+                  <h3 class="headline-sm card-title">Laboratoire d'analyses</h3>
 
-                  <p class="card-text">Nisi nullam</p>
+                  <p class="card-text">Analyses biomédicales sur place</p>
                 </div>
 
               </div>
@@ -529,10 +522,10 @@
         <div class="container">
 
           <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
-            News & Article
+            Actualités &amp; Conseils
           </p>
 
-          <h2 class="section-title headline-md text-center" data-reveal="bottom">Latest Articles</h2>
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Conseils santé de la clinique</h2>
 
           <ul class="grid-list">
 
@@ -544,27 +537,27 @@
                   <div class="card-meta">
                     <ion-icon name="person-outline"></ion-icon>
 
-                    <span class="span">By Admin</span>
+                    <span class="span">Par la clinique</span>
                   </div>
 
                   <div class="card-meta">
                     <ion-icon name="folder-outline"></ion-icon>
 
-                    <span class="span">Specialist</span>
+                    <span class="span">Médecine générale</span>
                   </div>
 
                 </div>
 
-                <h3 class="headline-sm card-title">Could intermittent fasting reduce breast cancer</h3>
+                <h3 class="headline-sm card-title">Pourquoi faire un suivi médical régulier ?</h3>
 
-                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+                <time class="title-sm date" datetime="2026-10-12">12 octobre 2026</time>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat
+                  Un contrôle régulier permet de détecter précocement les maladies et de mieux suivre les traitements
+                  en cours. Nos médecins généralistes vous accompagnent tout au long de l'année.
                 </p>
 
-                <a href="#" class="btn-text title-lg">Read More</a>
+                <a href="tel:+2290194465252" class="btn-text title-lg">Prendre rendez-vous</a>
 
               </div>
             </li>
@@ -577,27 +570,27 @@
                   <div class="card-meta">
                     <ion-icon name="person-outline"></ion-icon>
 
-                    <span class="span">By Admin</span>
+                    <span class="span">Par la clinique</span>
                   </div>
 
                   <div class="card-meta">
                     <ion-icon name="folder-outline"></ion-icon>
 
-                    <span class="span">Specialist</span>
+                    <span class="span">Rhumatologie</span>
                   </div>
 
                 </div>
 
-                <h3 class="headline-sm card-title">Give children more autonomy during the pandemic</h3>
+                <h3 class="headline-sm card-title">Protéger ses articulations au quotidien</h3>
 
-                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+                <time class="title-sm date" datetime="2026-10-28">28 octobre 2026</time>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat
+                  Douleurs articulaires, arthrose, rhumatismes : adopter de bons gestes au quotidien fait toute la
+                  différence. Consultez notre service de rhumatologie pour un avis spécialisé.
                 </p>
 
-                <a href="#" class="btn-text title-lg">Read More</a>
+                <a href="tel:+2290194465252" class="btn-text title-lg">Prendre rendez-vous</a>
 
               </div>
             </li>
@@ -610,27 +603,27 @@
                   <div class="card-meta">
                     <ion-icon name="person-outline"></ion-icon>
 
-                    <span class="span">By Admin</span>
+                    <span class="span">Par la clinique</span>
                   </div>
 
                   <div class="card-meta">
                     <ion-icon name="folder-outline"></ion-icon>
 
-                    <span class="span">Specialist</span>
+                    <span class="span">Laboratoire</span>
                   </div>
 
                 </div>
 
-                <h3 class="headline-sm card-title">How do binge eating and drinking impact the liver?</h3>
+                <h3 class="headline-sm card-title">Les analyses de laboratoire : un bilan de santé essentiel</h3>
 
-                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
+                <time class="title-sm date" datetime="2026-11-05">5 novembre 2026</time>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat
+                  Nos analyses biomédicales réalisées sur place permettent un diagnostic rapide et fiable. Un bilan
+                  régulier aide à prévenir et surveiller de nombreuses affections.
                 </p>
 
-                <a href="#" class="btn-text title-lg">Read More</a>
+                <a href="tel:+2290194465252" class="btn-text title-lg">Prendre rendez-vous</a>
 
               </div>
             </li>
@@ -651,36 +644,19 @@
     - #FOOTER
   -->
 
-  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+  <footer class="footer" id="contact" style="background-image: url('./assets/images/footer-bg.png')">
     <div class="container">
 
       <div class="section footer-top">
 
         <div class="footer-brand" data-reveal="bottom">
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="136" height="46" loading="lazy" alt="Doclab home">
+          <a href="#top" class="logo">
+            <img src="./assets/images/logo.svg" width="280" height="46" loading="lazy"
+              alt="Clinique du Boulevard Lagunaire — Porto-Novo">
           </a>
 
           <ul class="contact-list has-after">
-
-            <li class="contact-item">
-
-              <div class="item-icon">
-                <ion-icon name="mail-open-outline"></ion-icon>
-              </div>
-
-              <div>
-                <p>
-                  Main Email : <a href="mailto:contact@website.com" class="contact-link">contact@&shy;website.com</a>
-                </p>
-
-                <p>
-                  Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a>
-                </p>
-              </div>
-
-            </li>
 
             <li class="contact-item">
 
@@ -690,11 +666,29 @@
 
               <div>
                 <p>
-                  Office Telephone : <a href="tel:0029129102320" class="contact-link">0029129102320</a>
+                  Rendez-vous : <a href="tel:+2290194465252" class="contact-link">01 94 46 52 52</a>
                 </p>
 
                 <p>
-                  Mobile : <a href="tel:000232439493" class="contact-link">000 2324 39493</a>
+                  Urgences (24h/24) : <a href="tel:+2290194465252" class="contact-link">01 94 46 52 52</a>
+                </p>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon">
+                <ion-icon name="time-outline"></ion-icon>
+              </div>
+
+              <div>
+                <p>
+                  Ouverture : <span class="contact-link">24h/24 — 7j/7</span>
+                </p>
+
+                <p>
+                  Permanence médicale continue
                 </p>
               </div>
 
@@ -706,18 +700,18 @@
 
         <div class="footer-list" data-reveal="bottom">
 
-          <p class="headline-sm footer-list-title">About Us</p>
+          <p class="headline-sm footer-list-title">À propos</p>
 
           <p class="text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            Clinique Médicale du Boulevard Lagunaire — établissement de santé privé à Porto-Novo.
           </p>
 
           <address class="address">
             <ion-icon name="map-outline"></ion-icon>
 
             <span class="text">
-              2416 Mapleview Drive <br>
-              Tampa, FL 33634
+              Avakpa, en face du restaurant Art Résidence <br>
+              Porto-Novo, Bénin
             </span>
           </address>
 
@@ -726,31 +720,31 @@
         <ul class="footer-list" data-reveal="bottom">
 
           <li>
-            <p class="headline-sm footer-list-title">Services</p>
+            <p class="headline-sm footer-list-title">Nos services</p>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Conditions</a>
+            <a href="#services" class="text footer-link">Médecine générale</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Listing</a>
+            <a href="#services" class="text footer-link">Urgences 24h/24</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">How It Works</a>
+            <a href="#specialites" class="text footer-link">Rhumatologie</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">What We Offer</a>
+            <a href="#specialites" class="text footer-link">Chirurgie</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Latest News</a>
+            <a href="#specialites" class="text footer-link">Orthopédie</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Contact Us</a>
+            <a href="#specialites" class="text footer-link">Laboratoire d'analyses</a>
           </li>
 
         </ul>
@@ -758,47 +752,49 @@
         <ul class="footer-list" data-reveal="bottom">
 
           <li>
-            <p class="headline-sm footer-list-title">Useful Links</p>
+            <p class="headline-sm footer-list-title">Liens utiles</p>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Conditions</a>
+            <a href="#accueil" class="text footer-link">Accueil</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Terms of Use</a>
+            <a href="#apropos" class="text footer-link">À propos</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Our Services</a>
+            <a href="#specialites" class="text footer-link">Spécialités</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Join as a Doctor</a>
+            <a href="tel:+2290194465252" class="text footer-link">Prendre rendez-vous</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">New Guests List</a>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="text footer-link">Page Facebook</a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">The Team List</a>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener"
+              class="text footer-link">Instagram</a>
           </li>
 
         </ul>
 
         <div class="footer-list" data-reveal="bottom">
 
-          <p class="headline-sm footer-list-title">Subscribe</p>
-
-          <form action="" class="footer-form">
-            <input type="email" name="email" placeholder="Email" class="input-field title-lg">
-
-            <button type="submit" class="btn has-before title-md">Subscribe</button>
-          </form>
+          <p class="headline-sm footer-list-title">Urgences &amp; Accessibilité</p>
 
           <p class="text">
-            Get the latest updates via email. Any time you may unsubscribe
+            Permanence médicale continue, 24 heures sur 24 et 7 jours sur 7.
+          </p>
+
+          <a href="tel:+2290194465252" class="btn has-before title-md">Appeler maintenant</a>
+
+          <p class="text">
+            Entrée et parking accessibles aux personnes en fauteuil roulant.
           </p>
 
         </div>
@@ -808,38 +804,28 @@
       <div class="footer-bottom">
 
         <p class="text copyright">
-          &copy; Doclab 2022 | All Rights Reserved by codewithsadee
+          &copy; 2026 Clinique du Boulevard Lagunaire — Porto-Novo, Bénin | Tous droits réservés
         </p>
 
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
+            <a href="tel:+2290194465252" class="social-link" aria-label="Appeler la clinique">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/" target="_blank"
+              rel="noopener" class="social-link" aria-label="Facebook">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-google"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-pinterest"></ion-icon>
+            <a href="https://www.instagram.com/p/DfW-nUYiBJN/" target="_blank" rel="noopener" class="social-link"
+              aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
@@ -858,7 +844,7 @@
     - #BACK TO TOP
   -->
 
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+  <a href="#top" class="back-top-btn" aria-label="Retour en haut" data-back-top-btn>
     <ion-icon name="chevron-up"></ion-icon>
   </a>
 

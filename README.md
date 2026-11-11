@@ -1,54 +1,30 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/doclab)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/doclab?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/doclab?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/xu_Cg3SCZX4?style=social)](https://youtu.be/xu_Cg3SCZX4)
+# Clinique du Boulevard Lagunaire — Site web
 
-  <br />
-  <br />
+Site web vitrine de la **Clinique du Boulevard Lagunaire**, établissement de santé privé situé à Avakpa, Porto-Novo (Bénin).
 
-  <h2 align="center">Doclab - Hospital Website</h2>
+## Caractéristiques du site
 
-  Doclab is a fully responsive hospital website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+- Page unique (one-page) responsive : accueil, services, à propos, spécialités, conseils santé, contact
+- Prise de rendez-vous par téléphone : **01 94 46 52 52**
+- Liens vers la page Facebook et Instagram de la clinique
 
-  <a href="https://codewithsadee.github.io/doclab/"><strong>➥ Live Demo</strong></a>
+## Informations sur la clinique
 
-</div>
+- **Nom** : Clinique du Boulevard Lagunaire (entité enregistrée : Clinique Médicale du Boulevard Lagunaire Porto Novo)
+- **Adresse** : Avakpa, en face du restaurant Art Résidence, Porto-Novo, Bénin
+- **Horaires** : ouvert 24h/24 et 7j/7 (permanence médicale continue)
+- **Services** : médecine générale, urgences, rhumatologie, chirurgie, orthopédie, laboratoire d'analyses biomédicales
+- **Accessibilité** : entrée principale et parking adaptés aux personnes en fauteuil roulant
+- **Réseaux sociaux** : [Facebook](https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/) · [Instagram](https://www.instagram.com/p/DfW-nUYiBJN/)
 
-<br />
+## Aperçu local
 
-### Demo Screeshots
-
-![Doclab Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Doclab** locally, run this command on your git bash:
-
-Linux and macOS:
+Le site est 100 % statique (HTML/CSS/JS). Il suffit d'ouvrir `index.html` dans un navigateur, ou de servir le dossier :
 
 ```bash
-sudo git clone https://github.com/codewithsadee/doclab.git
+npx serve .
 ```
 
-Windows:
+## Crédits
 
-```bash
-git clone https://github.com/codewithsadee/doclab.git
-```
-
-### Contact
-
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-### License
-
-This project is **free to use** and does not contains any license.
+Template de base : [Doclab](https://github.com/codewithsadee/doclab) de codewithsadee (licence MIT), adapté pour la Clinique du Boulevard Lagunaire.
