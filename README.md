@@ -1,4 +1,4 @@
-# Clinique du Boulevard Lagunaire — Site web
+# Clinique du Boulevard Lagunaire, site web officiel
 
 Site web vitrine de la **Clinique du Boulevard Lagunaire**, établissement de santé privé situé à Avakpa, Porto-Novo (Bénin).
 
@@ -15,7 +15,7 @@ Site web vitrine de la **Clinique du Boulevard Lagunaire**, établissement de sa
 - **Horaires** : ouvert 24h/24 et 7j/7 (permanence médicale continue)
 - **Services** : médecine générale, urgences, rhumatologie, chirurgie, orthopédie, laboratoire d'analyses biomédicales
 - **Accessibilité** : entrée principale et parking adaptés aux personnes en fauteuil roulant
-- **Réseaux sociaux** : [Facebook](https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/) · [Instagram](https://www.instagram.com/p/DfW-nUYiBJN/)
+- **Réseaux sociaux** : [Facebook](https://www.facebook.com/p/Clinique-du-Boulevard-Lagunaire-61589337164669/) et [Instagram](https://www.instagram.com/p/DfW-nUYiBJN/)
 
 ## Aperçu local
 

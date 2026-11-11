@@ -2,5 +2,5 @@
   <rect x="0" y="2" width="40" height="40" rx="9" fill="#00ACB1"/>
   <path d="M17 11 v8 h-10 v6 h10 v8 h6 v-8 h10 v-6 h-10 v-8 z" fill="white"/>
   <text x="50" y="20" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="white">Clinique du Boulevard</text>
-  <text x="50" y="38" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.5" fill="#00ACB1">LAGUNAIRE — PORTO-NOVO</text>
+  <text x="50" y="38" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.5" fill="#00ACB1">LAGUNAIRE, PORTO-NOVO</text>
 </svg>
